@@ -1,0 +1,283 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+body:after{
+	content: url("../imgs/Listen.gif");
+	content: url("../imgs/Record.gif");
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Ubuntu', Calibri, Arial, sans-serif;
+	color: #f2f2f2;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align: center;
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section1{
+		background-image: url(../imgs/bg1.png);
+		background-position: center;
+	}
+
+#section1 h1{
+	color: white;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.tra{
+	color: rgba(255,255,255,0.4);
+}
+
+#section1 h2{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+#section1 p{
+	color: rgba(255,255,255,0.7);
+	font-size: 25px;
+	margin-top: 40px;
+
+}
+#section1 .logo{
+	margin-bottom: 5px;
+	margin-top:75px;
+}
+
+/* Section 2
+ * --------------------------------------- */
+
+#section2{
+	background-image: url(../imgs/bg2.jpg);
+	background-size: 1440px 1002px;
+	background-position: center;
+	padding: 6% 0 0 0;
+}
+
+#section2 h1{
+	color: white;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#section2 h1,
+#section2 p{
+	z-index: 3;
+}
+
+#section2 p{
+	color: rgba(255,255,255,0.7);
+	font-size: 25px;
+	font-weight: lighter;
+	margin-top: -50px;
+}
+
+#section2 .para{
+	color: rgba(255,255,255,0.7);
+	font-size: 20px;
+	font-weight: lighter;
+	margin-top: -50px;
+	text-align: left;
+}
+
+#section2 .iphone{
+	width:250px;
+	height:auto;
+	padding:0px;
+	padding-right: 15px;
+}
+
+/* Section 3
+ * --------------------------------------- */
+
+#section3{
+	background-image: url(../imgs/bg3.jpg);
+	background-position: center;
+	padding: 6% 0 0 0;
+}
+
+#section3 h1{
+	color: white;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#section3 h1,
+#section3 p{
+	z-index: 3;
+}
+
+#section3 p{
+	color: rgba(255,255,255,0.7);
+	font-size: 25px;
+	font-weight: lighter;
+	margin-top: -50px;
+}
+
+#section3 .para{
+	color: rgba(255,255,255,0.7);
+	font-size: 20px;
+	font-weight: lighter;
+	margin-top: -50px;
+	text-align: left;
+}
+
+#section3 .iphone{
+	width:250px;
+	height:auto;
+	padding:0px;
+	padding-right: 15px;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section4{
+		background-image: url(../imgs/bg4.jpg);
+		background-position: center;
+		background-size: 1500px auto;
+	}
+
+#section4 h1{
+	color: white;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.tra{
+	color: rgba(255,255,255,0.4);
+}
+
+#section4 h2{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+#section4 p{
+	color: rgba(255,255,255,0.7);
+	font-size: 25px;
+	margin-top: 40px;
+
+}
+#section4 .logo{
+	width:500px;
+	height:auto;
+}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	color: #AAA;
+}
+
+/* Modal */
+
+.modalDialog {
+    position: fixed;
+    color: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalbig{
+	font-size: 25px;
+	font-weight: bold;
+}
+.modalsmall{
+	font-size: 15px;
+}
+.alink{
+	text-decoration: none;
+	font-weight: bold;
+	color:#666;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 250px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+.close {
+    color: #000;
+	font-size: 15px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+

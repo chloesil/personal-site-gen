@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Favourite Things</title>
+      <meta name="author" content="Chloe Silver" />
+      <meta name="description" content="The study of value held in our most prized possessions" />
+      <meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+      <meta name="Resource-type" content="Document" />
+      <meta name=viewport
+      content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+      <link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+      <link rel="icon" type="image/png" href="../favicon.png">
+      <link href="../css/c3/c3.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="http://chloesilver.ca/favouritethings#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+  <section class="stories" id="stories">
+
+    <div class="intros">
+      <div class="medium">Value Over Time</div>
+      <hr>
+      This line chart depicts perceived levels of value over time.
+    </div>
+
+    <div class="medium small"><table border="0" align="center" width="90%"><tr>
+        <td align="left" width="50%">
+          beginning of ownership
+        </td>
+        <td align="right" width="50%">
+          present day
+        </td>
+      </tr></table></div>
+
+    <div id="chart"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="../js/c3/c3.js"></script>
+    <script>
+      var chart = c3.generate({
+        data: {
+        xs: {
+            'piano': 'x1',
+            'passport': 'x2',
+            'lamp': 'x3',
+            'plate': 'x4',
+            'tape': 'x5',
+            'sweater': 'x6',
+            'car': 'x7',
+            'bell': 'x8',
+            'bowl': 'x9',
+            'bear': 'x10',
+            'rooster': 'x11',
+            'stamp': 'x12',
+            'book': 'x13',
+            'rosie': 'x14',
+            'ball': 'x15',
+            'fox': 'x16',
+            'wall': 'x17',
+            'eagle': 'x18',
+            'medal': 'x19',
+            'jacket': 'x20',
+            'cork': 'x21',
+            'block': 'x22',
+            'chain': 'x23',
+            'vase': 'x24',
+            'transfer': 'x25',
+            'bird': 'x26',
+            'flower': 'x27',
+            'metro': 'x28',
+            'skate': 'x29',
+            'elk': 'x30',
+        },
+        columns: [
+            ['x1', 0, 28, 100],
+            ['x2', 0, 72, 100],
+            ['x3', 0, 100],
+            ['x4', 0, 100],
+            ['x5', 0, 44, 64, 100],
+            ['x6', 0, 57, 100],
+            ['x7', 0, 100],
+            ['x8', 0, 70, 100],
+            ['x9', 0, 71, 100],
+            ['x10', 0, 100],
+            ['x11', 0, 100],
+            ['x12', 0, 100],
+            ['x13', 0, 13, 39, 100],
+            ['x14', 0, 68, 100],
+            ['x15', 0, 100],
+            ['x16', 0, 7, 32, 48, 100],
+            ['x17', 0, 100],
+            ['x18', 0, 100],
+            ['x19', 0, 100],
+            ['x20', 0, 61, 100],
+            ['x21', 0, 100],
+            ['x22', 0, 100],
+            ['x23', 0, 40, 100],
+            ['x24', 0, 100],
+            ['x25', 0, 100],
+            ['x26', 0, 100],
+            ['x27', 0, 100],
+            ['x28', 0, 100],
+            ['x29', 0, 100],
+            ['x30', 0, 100],
+            ['piano', 19, 84, 43],
+            ['passport', 96, 10, 87],
+            ['lamp', 73, 48],
+            ['plate', 36, 84],
+            ['tape', 86, 95, 100, 10],
+            ['sweater', 46, 34, 64],
+            ['car', 100, 100],
+            ['bell', 25, 57, 22],
+            ['bowl', 55, 70, 27],
+            ['bear', 61, 61],
+            ['rooster', 50, 86],
+            ['stamp', 76, 29],
+            ['book', 64, 90, 90, 38],
+            ['rosie', 80, 93, 80],
+            ['ball', 82, 66],
+            ['fox', 100, 100, 0, 100, 72],
+            ['wall', 89, 79],
+            ['eagle', 85, 95],
+            ['medal', 100, 100],
+            ['jacket', 80, 84, 17],
+            ['cork', 55, 95],
+            ['block', 46, 63],
+            ['chain', 90, 99, 10],
+            ['vase', 75, 50],
+            ['transfer', 71, 55],
+            ['bird', 86, 72],
+            ['flower', 93, 89],
+            ['metro', 96, 49],
+            ['skate', 70, 70],
+            ['elk', 64, 75],
+        ]
+        },axis: {
+            y: {
+                max: 100,
+                min: 0,
+                padding: {top:10, bottom:10}
+            },
+            y2: {
+                show: true,
+                default: [-4, 104],
+                padding: {top:10, bottom:10},
+            },
+            x: {
+                show: false,
+            }
+        },
+        color: {
+        pattern: ["#533112","#9F2921","#435083","#B9717D","#D22027","#C05927","#BE7DB4","#B0298A","#E8C154","#E6C1DB","#561F0E","#553E98","#548F40","#9DCBE9","#2A2C77","#84451E","#8310B2","#B0B0B0","#996548","#1D517B","#BA8731","#3FBCA2","#696A6A","#32B44A","#107B94","#8F8762","#F4800C","#E1BE23","#A2C03A","#898093"]
+        },
+        tooltip: {
+        show: false
+        }
+      });
+    </script>
+
+    <a href="../object"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element object">
+        </div>
+    </div></a>
+
+    <a href="../action"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element action">
+        </div>
+    </div></a>
+
+    <a href="../location"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element location">
+        </div>
+    </div></a>
+
+    <a href="../time"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element time">
+        </div>
+    </div></a>
+
+    <a href="../value"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element svalue">
+        </div>
+    </div></a>
+    
+  </section>
+  <footer>
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+
+  </body>
+</html>

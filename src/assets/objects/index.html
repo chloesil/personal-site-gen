@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Objects of Desire</title>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="author" content="name">
+		<meta name="copyright" content="&copy; year name">
+
+		<link rel="icon" type="image/png" href="">
+		<link rel="stylesheet" href="css/nstyle.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+		<!--zoom -->
+
+	    <script src="js/libs/jquery.js"></script>
+	    <script src="js/jquery.panzoom.js"></script>
+	    <script src="js/libs/jquery.mousewheel.js"></script>
+
+		<!--zoom -->
+
+	</head>
+	<body>
+
+		<section class="stage">
+			<ul class="item-container">
+
+				<div class="infoshirt"></div>
+				<div class="infocomic"></div>
+				<div class="infoshirt2"></div>
+				<div class="infomug"></div>
+				<div class="infoalmonds"></div>
+				<div class="infolays"></div>
+				<div class="infocard"></div>
+				<div class="infoimmov"></div>
+				<div class="infooyster"></div>
+				<div class="infobeans"></div>
+				<div class="infomagnet"></div>
+				<div class="infocherry"></div>
+				<div class="infohat"></div>
+				<div class="infoalmonds2"></div>
+				<div class="infosoup"></div>
+				<div class="infooregon"></div>
+				<div class="infomen"></div>
+				<div class="infopin"></div>
+				<div class="infohead"></div>
+				<div class="infomug2"></div>
+				
+				<li class="item shirt" id="shirt"></li>
+				<li class="item comic" id="comic"></li>
+				<li class="item shirt2" id="shirt2"></li>
+				<li class="item mug" id="mug"></li>
+				<li class="item almonds" id="almonds"></li>
+				<li class="item lays" id="lays"></li>
+				<li class="item card" id="card"></li>
+				<li class="item immov" id="immov"></li>
+				<li class="item oyster" id="oyster"></li>
+				<li class="item beans" id="beans"></li>
+				<li class="item magnet" id="magnet"></li>
+				<li class="item cherry" id="cherry"></li>
+				<li class="item hat" id="hat"></li>
+				<li class="item almonds2" id="almonds2"></li>
+				<li class="item soup" id="soup"></li>
+				<li class="item oregon" id="oregon"></li>
+				<li class="item men" id="men"></li>
+				<li class="item pin" id="pin"></li>
+				<li class="item head" id="head"></li>
+				<li class="item mug2" id="mug2"></li>
+				
+			</ul>
+
+				<div class="masterClose"></div>
+		</section>
+
+		<section class="zstage">
+
+			<section id="focal">
+		      <div class="parent">
+		        <div class="panzoom">
+		          <img src="img/mainzoom.png" width="1284" height="625">
+		        </div>
+		      </div>
+		      <script>
+		        (function() {
+		          var $section = $('#focal');
+		          var $panzoom = $section.find('.panzoom').panzoom();
+		          $panzoom.parent().on('mousewheel.focal', function( e ) {
+		            e.preventDefault();
+		            var delta = e.delta || e.originalEvent.wheelDelta;
+		            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+		            $panzoom.panzoom('zoom', zoomOut, {
+		              increment: 0.1,
+		              focal: e
+		            });
+		          });
+		        })();
+		      </script>
+
+		    </section>
+
+		</section>
+
+		<section class="sidebar">
+			<img src="img/logo.png"><br><br>
+			<div class="side">
+				<img src="img/arrowd.png"><br>
+				<p>While travelling, some people collect photographs and others collect memories. When I am lucky enough to take a trip, I like to collect objects that tell a story of my travels.<br><br>
+
+				This interactive experience allows you to explore the objects I have collected and learn a little about each one.<br><br>
+
+				Click on a view mode and explore the fruits of my ten-day trip to <span class="seattle">Seattle, WA</span> and <span class="portland">Portland, OR</span> during August 2013.</p>
+
+				<p><center>view mode</center>
+
+				<div class="navstyle top">
+					<a href="#all" class="info" data-filter="all">INFO</a>
+					<a href="#all" class="zoom" data-filter="all">ZOOM</a>
+				</div><br>
+			</div>
+
+			<div class="click hide">
+				<center>click to hide</center>
+				<img src="img/arrowu.png" class="clickarrow">
+			</div>
+			</div>
+			<div class="click show">
+				<center>click to show</center>
+				<img src="img/arrowd.png" class="clickarrowtwo"></div>
+			</div>
+		</section>
+
+		<!--zoom-->
+		
+	    <script src="../test/libs/jquery.js"></script>
+	    <script src="../dist/jquery.panzoom.js"></script>
+	    <script src="../test/libs/jquery.mousewheel.js"></script>
+
+		<!--zoom-->
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<script src="js/scripts.js"></script>
+		<script>
+
+    // google analytics stuff
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-66538906-1', 'auto');
+	ga('send', 'pageview');
+	ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
+	</script>
+	</body>
+</html>

@@ -1,0 +1,171 @@
+/* Overall CSS
+-----------------------------------------------*/
+
+.work-content {
+  font-size: 15px;
+  margin-top: 8%;
+  font-family: 'nexa_lightregular', sans-serif;
+}
+
+.splash-image {
+  width: 100%;
+  height: inherit;
+}
+
+.work-content-inner {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Typography
+-----------------------------------------------*/
+
+.bold {
+  font-family: 'nexa_boldregular', serif;
+  font-weight: 900;
+}
+
+.subhead {
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+.pullquote {
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.pullquote:before {
+  content: '"';
+  margin-left: -5px;
+}
+
+.pullquote:after {
+  content: '"';
+}
+
+/* Header Area
+-----------------------------------------------*/
+
+.question {
+  font-size: 30px;
+  padding-bottom: 5px;
+  text-indent: -35px;
+}
+
+.capital {
+  font-family: 'nexa_lightregular', sans-serif;
+  font-weight: 500;
+}
+
+.content {
+  margin: 0 auto;
+  width: 48%;
+  margin-top: -15px;
+}
+
+.description {
+  margin-bottom: 5px;
+}
+
+/* Page Content
+-----------------------------------------------*/
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imgs {
+  width: 100%;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+
+.more {
+  width: 120px;
+  height: inherit;
+  background: rgba(69,147,110,0.0);
+  border-style: solid;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  -o-transition:color .2s ease-out, background .2s ease-out;
+  -ms-transition:color .2s ease-out, background .2s ease-out;
+  -moz-transition:color .2s ease-out, background .2s ease-out;
+  -webkit-transition:color .2s ease-out, background .2s ease-out;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background .2s ease-out;
+}
+
+a {
+  text-decoration: none;
+  -o-transition:color .4s ease-out, background .4s ease-out;
+  -ms-transition:color .4s ease-out, background .4s ease-out;
+  -moz-transition:color .4s ease-out, background .4s ease-out;
+  -webkit-transition:color .4s ease-out, background .4s ease-out;
+  /* ...and now override with proper CSS property */
+  transition:color .4s ease-out, background .4s ease-out;
+  color: #424945;
+}
+
+.next {
+  text-indent: 0px;
+}
+
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;    
+    clear: both !important;
+}
+.pull-left {
+  float: left !important;
+  width: 68%;
+}
+.pull-right {
+  float: right !important;
+  width: 27%;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+/* Media Queries
+-----------------------------------------------*/
+
+@media (max-width: 600px) {
+  /* mobile */
+
+  .work-content {
+    margin-top: 23%;
+  }
+
+  .pull-left,
+  .pull-right {
+    width: 100%;
+    float: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1029px) {
+  /* monitors */
+
+  .imgs-halfsize {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

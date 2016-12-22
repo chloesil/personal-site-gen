@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" 
+      type="image/png" 
+      href="../favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Favourite Things</title>
+	<meta name="author" content="Chloe Silver" />
+	<meta name="description" content="The study of value held in our most prized possessions" />
+	<meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+	<meta name="Resource-type" content="Document" />
+	<meta name=viewport
+  content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+	<link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+<body>
+
+	 <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="http://chloesilver.ca/favouritethings#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+	<section id="story" class="story">
+
+		<img src="../img/img/chain.jpg" class="fix">
+
+		<div class="text">
+			<img src="../img/icons/chain.png">
+			<hr>
+			<p>I received this bracelet as a present right before I moved across Canada for university, from my boyfriend at the time. He went through a lot to get it, it was originally a necklace that he had made into two bracelets, one for him and one for me. I wore it literally every single day between when he gave it to me and when we broke up.<br><br>
+
+I remember walking into my dorm room one day, and getting the clasp of the bracelet caught on the door handle. It bent out of shape and wouldn’t stay closed. I can remember looking at the broken clasp and just kind of, losing it a little bit. I was in tears and pretty much became a mess. I would have stayed that way if my awesome roommate didn’t calm me down and help me fix it. I guess my friends knew that it wasn’t just a bracelet.<br><br>
+
+Shortly after we broke up, I was going to the gym to get it off my mind. The end of the relationship only really sunk in when I took off the bracelet at that moment. We were no longer together, so there was no reason to wear it anymore.<br><br>
+
+That bracelet represented more than just a little piece of metal I wore on my wrist, it was a symbol for the love and care we had for each other, something I still treasure now. We broke up more than two years ago, but we both still have these bracelets. Certain items hold more meaning than they may show at first glance.
+
+
+</p><br><hr>
+
+			<table border="0" align="center" width="100%"><tr>
+				<td align="left" width="33%"><a href="../piano">
+					previous<br>
+					<img src="../img/lricons/lpiano.png" class="next"></a>
+				</td>
+				<td align="center">
+					<a href="#" onClick="goSomewhere(); return false;">random<br>
+					<img src="../img/lricons/random.png" class="next"></a>
+				</td>
+				<td align="right" width="33%"><a href="../passport">
+					next<br>
+					<img src="../img/lricons/rpassport.png" class="next"></a>
+				</td>
+			</tr></table><hr><br>
+
+
+	</section>
+	<section id="squares">
+
+			<div class="intros"><center>
+			<a href="../object"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element object">
+			    </div>
+			</div></a>
+
+			<a href="../action"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element action">
+			    </div>
+			</div></a>
+
+			<a href="../location"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element location">
+			    </div>
+			</div></a>
+
+			<a href="../time"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element time">
+			    </div>
+			</div></a>
+
+			<a href="../value"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element svalue">
+			    </div>
+			</div></a>
+			</div>
+			<br><br><br>
+
+		</section>
+  <footer class="storyfoot">
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+<script type="text/javascript">
+    var urls = [
+        "../ball",
+        "../bear",
+        "../bell",
+        "../bird",
+        "../block",
+        "../book",
+        "../bowl",
+        "../car",
+        "../chain",
+        "../cork",
+        "../eagle",
+        "../elk",
+        "../flower",
+        "../fox",
+        "../jacket",
+        "../lamp",
+        "../medal",
+        "../metro",
+        "../passport",
+        "../piano",
+        "../plate",
+        "../rooster",
+        "../rosie",
+        "../skate",
+        "../stamp",
+        "../sweater",
+        "../tape",
+        "../transfer",
+        "../vase",
+        "../wall",
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+</body>
+
+</html>

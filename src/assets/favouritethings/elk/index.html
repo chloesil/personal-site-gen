@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" 
+      type="image/png" 
+      href="../favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Favourite Things</title>
+	<meta name="author" content="Chloe Silver" />
+	<meta name="description" content="The study of value held in our most prized possessions" />
+	<meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+	<meta name="Resource-type" content="Document" />
+	<meta name=viewport
+  content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+	<link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+<body>
+
+	 <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="http://chloesilver.ca/favouritethings#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+	<section id="story" class="story">
+
+		<img src="../img/img/elk.jpg" class="fix">
+
+		<div class="text">
+			<img src="../img/icons/elk.png">
+			<hr>
+			<p>I received this figurine on the last day of a summer internship I worked at in 2014. It was symbolic for me because the giving of these figurines is a tradition among the people who work in the studio. When you get a figurine, you’re part of the collective. Not to mention, of all the interns working there that summer, I was the only one to receive a figurine.<br><br>
+
+I’m not obsessed with Frozen. I may have blasted Let It Go and sung all the words out loud, but that’s normal! If I had to venture a guess, I’d say they chose the reindeer because almost everyone was under the impression that reindeer are a Canadian thing. Which is funny because they’re called caribou here. So really nothing to do with Canada at all.<br><br>
+
+I also kept the figurine as a memento of the friends I made during my short time in New York. I was a little nervous to be on my own for a considerably long amount of time in a big city, but I found it pretty easy to make friends and get along with others, both during and after work. 
+
+</p><br><hr>
+
+			<table border="0" align="center" width="100%"><tr>
+				<td align="left" width="33%"><a href="../eagle">
+					previous<br>
+					<img src="../img/lricons/leagle.png" class="next"></a>
+				</td>
+				<td align="center">
+					<a href="#" onClick="goSomewhere(); return false;">random<br>
+					<img src="../img/lricons/random.png" class="next"></a>
+				</td>
+				<td align="right" width="33%"><a href="../jacket">
+					next<br>
+					<img src="../img/lricons/rjacket.png" class="next"></a>
+				</td>
+			</tr></table><hr><br>
+
+
+	</section>
+	<section id="squares">
+
+			<div class="intros"><center>
+			<a href="../object"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element object">
+			    </div>
+			</div></a>
+
+			<a href="../action"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element action">
+			    </div>
+			</div></a>
+
+			<a href="../location"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element location">
+			    </div>
+			</div></a>
+
+			<a href="../time"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element time">
+			    </div>
+			</div></a>
+
+			<a href="../value"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element svalue">
+			    </div>
+			</div></a>
+			</div>
+			<br><br><br>
+
+		</section>
+  <footer class="storyfoot">
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+<script type="text/javascript">
+    var urls = [
+        "../ball",
+        "../bear",
+        "../bell",
+        "../bird",
+        "../block",
+        "../book",
+        "../bowl",
+        "../car",
+        "../chain",
+        "../cork",
+        "../eagle",
+        "../elk",
+        "../flower",
+        "../fox",
+        "../jacket",
+        "../lamp",
+        "../medal",
+        "../metro",
+        "../passport",
+        "../piano",
+        "../plate",
+        "../rooster",
+        "../rosie",
+        "../skate",
+        "../stamp",
+        "../sweater",
+        "../tape",
+        "../transfer",
+        "../vase",
+        "../wall",
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+</body>
+
+</html>

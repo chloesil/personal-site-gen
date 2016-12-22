@@ -1,0 +1,751 @@
+/* Styles */ 
+
+html{
+    background-image: url('../img/infobg.png');
+    background-size: 1400px 875px;
+    background-position: -60px -125px;
+    background-attachment: fixed;
+    background-color: #241C19;
+    background-repeat: no-repeat;
+}
+
+html .zstage{
+    background-image: url('../img/infobg.png');
+    background-size: 1400px 875px;
+    background-position: 202px -125px;
+    background-attachment: fixed;
+    background-color: #241C19;
+}
+
+html, body{
+  font-family: 'Lato', sans-serif;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  color: #AFB6BF;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight:400;
+}
+
+a {
+  text-decoration: none;
+  color:#fff;
+}
+
+
+/* Type Styles */
+
+.seattle{
+  color:#3775BF;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight:900;
+  font-family: 'Lato', sans-serif;
+}
+
+.portland{
+  color:#A57C21;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight:900;
+  font-family: 'Lato', sans-serif;
+}
+
+.click{
+  font-size: 10px;
+  color:#AFB6BF;
+  line-height: 18px;
+  font-weight:300;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 5px;
+}
+
+.show{
+  display: none;
+}
+
+.clickarrow {
+      width:168px;
+      height:19px;
+      margin:0;
+    transition: 2s;
+    -webkit-transition: 2s;
+ }
+
+.clickarrow#move {
+    top:-100px;
+ }
+
+.clickarrowtwo {
+      width:168px;
+      height:19px;
+      margin:0;
+    transition: 2s;
+    -webkit-transition: 2s;
+ }
+
+.clickarrowtwo#move {
+    top:100px;
+ }
+
+.navstyle{
+  text-align: left;
+  font-weight: normal;
+}
+.navstyle.top{
+  text-align: center;
+  margin-bottom: -15px;
+  font-weight: bold;
+}
+.navstyle.top a{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.navstyle img{
+  padding-right: 10px;
+}
+
+ol, ul {
+  list-style: none; }
+
+.filter > li {
+  text-align: left;
+}
+
+.selected {
+  color: #2051A8;
+  background-color: #A57C21;
+  padding: 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+a:hover{
+  color: #000;
+  background-color: #bbb;
+  padding: 4px 4px 4px 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+  /* Zoom Stage */ 
+
+  .zstage {
+    position:absolute;
+    width:100%;
+    height:120%;
+    top:0;
+    left:0;
+    background-image: url('../img/zoom.png');
+    display:none;
+  }
+
+
+  /* Stage */ 
+
+  .stage {
+    position:absolute;
+    width:100%;
+    height:120%;
+    top:0;
+    left:0;
+  }
+
+     /* Items */ 
+
+     .shirt{
+      width:322px;
+      height:286px;
+      background-image: url('../img/shirt.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .comic{
+      width:120px;
+      height:169px;
+      background-image: url('../img/comic.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .shirt2{
+      width:181px;
+      height:208px;
+      background-image: url('../img/shirt2.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .mug{
+      width:119px;
+      height:90px;
+      background-image: url('../img/mug.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .almonds{
+      width:91px;
+      height:147px;
+      background-image: url('../img/almonds.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .lays{
+      width:115px;
+      height:178px;
+      background-image: url('../img/lays.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .card{
+      width:81px;
+      height:56px;
+      background-image: url('../img/card.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .immov{
+      width:88px;
+      height:133px;
+      background-image: url('../img/immov.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .oyster{
+      width:72px;
+      height:73px;
+      background-image: url('../img/oyster.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .beans{
+      width:115px;
+      height:77px;
+      background-image: url('../img/beans.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .magnet{
+      width:46px;
+      height:62px;
+      background-image: url('../img/magnet.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .cherry{
+      width:83px;
+      height:131px;
+      background-image: url('../img/cherry.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .hat{
+      width:137px;
+      height:145px;
+      background-image: url('../img/hat.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .almonds2{
+      width:198px;
+      height:52px;
+      background-image: url('../img/almonds2.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .soup{
+      width:58px;
+      height:102px;
+      background-image: url('../img/soup.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .oregon{
+      width:39px;
+      height:30px;
+      background-image: url('../img/oregon.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .men{
+      width:39px;
+      height:38px;
+      background-image: url('../img/men.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .pin{
+      width:17px;
+      height:17px;
+      background-image: url('../img/pin.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .head{
+      width:22px;
+      height:71px;
+      background-image: url('../img/head.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+     .mug2{
+      width:81px;
+      height:66px;
+      background-image: url('../img/mug2.png');
+      position: absolute;
+      left:50%;
+      top:50%;
+      z-index:1;
+     }
+
+         /* Item-all - Positions */
+
+         #shirt{
+          left:386px;
+          top:207px;
+         }
+
+         #comic{
+          left:610px;
+          top:36px;
+         }
+
+         #shirt2{
+          left:737px;
+          top:30px;
+         }
+
+         #mug{
+          left:359px;
+          top:20px;
+         }
+
+         #almonds{
+          left:384px;
+          top:110px;
+         }
+
+         #lays{
+          left:490px;
+          top:25px;
+         }
+
+         #card{
+          left:361px;
+          top:374px;
+         }
+
+         #immov{
+          left:358px;
+          top:445px;
+         }
+
+         #oyster{
+          left:458px;
+          top:507px;
+         }
+
+         #beans{
+          left:537px;
+          top:506px;
+         }
+
+         #magnet{
+          left:662px;
+          top:514px;
+         }
+
+         #cherry{
+          left:719px;
+          top:448px;
+         }
+
+         #hat{
+          left:796px;
+          top:441px;
+         }
+
+         #almonds2{
+          left:707px;
+          top:253px;
+         }
+
+         #soup{
+          left:718px;
+          top:309px;
+         }
+
+         #oregon{
+          left:718px;
+          top:415px;
+         }
+
+         #men{
+          left:777px;
+          top:403px;
+         }
+
+         #pin{
+          left:833px;
+          top:413px;
+         }
+
+         #head{
+          left:876px;
+          top:361px;
+         }
+
+         #mug2{
+          left:797px;
+          top:319px;
+         }
+
+  /* Info Windows */
+
+.infoshirt{
+position:absolute;
+display:block;
+background-image: url('../img/shirtinfo.png');
+width:457px;
+height:458px;
+top:145px;
+left:645px;
+z-index: 1000;
+display:none;
+}
+
+.infocomic{
+position:absolute;
+display:block;
+background-image: url('../img/comicinfo.png');
+width:457px;
+height:458px;
+top:-45px;
+left:670px;
+z-index: 1000;
+display:none;
+}
+
+.infoshirt2{
+position:absolute;
+display:block;
+background-image: url('../img/shirt2info.png');
+width:457px;
+height:458px;
+top:-15px;
+left:850px;
+z-index: 1000;
+display:none;
+}
+
+.infomug{
+position:absolute;
+display:block;
+background-image: url('../img/muginfo.png');
+width:457px;
+height:458px;
+top:-55px;
+left:415px;
+z-index: 1000;
+display:none;
+}
+
+.infoalmonds{
+position:absolute;
+display:block;
+background-image: url('../img/almondsinfo.png');
+width:457px;
+height:458px;
+top:80px;
+left:400px;
+z-index: 1000;
+display:none;
+}
+
+.infolays{
+position:absolute;
+display:block;
+background-image: url('../img/laysinfo.png');
+width:457px;
+height:458px;
+top:-35px;
+left:525px;
+z-index: 1000;
+display:none;
+}
+
+.infocard{
+position:absolute;
+display:block;
+background-image: url('../img/cardinfo.png');
+width:457px;
+height:458px;
+top:50px;
+left:380px;
+z-index: 1000;
+display:none;
+}
+
+.infoimmov{
+position:absolute;
+display:block;
+background-image: url('../img/immovinfo.png');
+width:457px;
+height:458px;
+top:200px;
+left:380px;
+z-index: 1000;
+display:none;
+}
+
+.infooyster{
+position:absolute;
+display:block;
+background-image: url('../img/oysterinfo.png');
+width:457px;
+height:458px;
+top:200px;
+left:475px;
+z-index: 1000;
+display:none;
+}
+
+.infobeans{
+position:absolute;
+display:block;
+background-image: url('../img/beansinfo.png');
+width:457px;
+height:458px;
+top:200px;
+left:575px;
+z-index: 1000;
+display:none;
+}
+
+.infomagnet{
+position:absolute;
+display:block;
+background-image: url('../img/magnetinfo.png');
+width:457px;
+height:458px;
+top:200px;
+left:655px;
+z-index: 1000;
+display:none;
+}
+
+.infocherry{
+position:absolute;
+display:block;
+background-image: url('../img/cherryinfo.png');
+width:457px;
+height:458px;
+top:170px;
+left:740px;
+z-index: 1000;
+display:none;
+}
+
+.infohat{
+position:absolute;
+display:block;
+background-image: url('../img/hatinfo.png');
+width:457px;
+height:458px;
+top:170px;
+left:870px;
+z-index: 1000;
+display:none;
+}
+
+.infoalmonds2{
+position:absolute;
+display:block;
+background-image: url('../img/almonds2info.png');
+width:457px;
+height:458px;
+top:180px;
+left:860px;
+z-index: 1000;
+display:none;
+}
+
+.infosoup{
+position:absolute;
+display:block;
+background-image: url('../img/soupinfo.png');
+width:457px;
+height:458px;
+top:30px;
+left:730px;
+z-index: 1000;
+display:none;
+}
+
+.infooregon{
+position:absolute;
+display:block;
+background-image: url('../img/oregoninfo.png');
+width:457px;
+height:458px;
+top:80px;
+left:710px;
+z-index: 1000;
+display:none;
+}
+
+.infomen{
+position:absolute;
+display:block;
+background-image: url('../img/meninfo.png');
+width:457px;
+height:458px;
+top:74px;
+left:752px;
+z-index: 1000;
+display:none;
+}
+
+.infopin{
+position:absolute;
+display:block;
+background-image: url('../img/pininfo.png');
+width:457px;
+height:458px;
+top:75px;
+left:805px;
+z-index: 1000;
+display:none;
+}
+
+.infohead{
+position:absolute;
+display:block;
+background-image: url('../img/headinfo.png');
+width:457px;
+height:458px;
+top:60px;
+left:850px;
+z-index: 1000;
+display:none;
+}
+
+.infomug2{
+position:absolute;
+display:block;
+background-image: url('../img/mug2info.png');
+width:457px;
+height:458px;
+top:20px;
+left:820px;
+z-index: 1000;
+display:none;
+}
+
+  .masterClose{
+    position: absolute;
+    width:97px;
+    height:42px;
+    top: 550px;
+    left: 1150px;
+    background-image: url('../img/close.png');
+    display: none;
+    z-index: 98;
+  }
+
+  /* Sidebar */
+
+  .sidebar {
+    position:absolute;
+    left:50px;
+    padding:15px;
+    width:175px;
+  }
+
+  .filtered {
+    opacity:0.4;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    margin-top: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  .filtered:hover {
+    opacity:1;
+    transition:0.4s;
+    -webkit-transition: 0.4s;
+  }
+  .logo {
+    opacity:1;
+  }   
+
+/* Labels */
+
+  .labels{
+    position:absolute;
+    background-color: rgba(12,17,0,0.5);
+    left:460px;
+    top:20px;
+    display:none;
+  }

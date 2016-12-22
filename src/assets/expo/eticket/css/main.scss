@@ -1,0 +1,333 @@
+//variables
+$white: #F4E6BB;
+$lightgrey: #eeeeee;
+$mediumgrey: #CCCCCC;
+$darkgrey: #333333;
+$maincolor: #b4da55;
+
+::-moz-selection {
+    background: $maincolor;
+    text-shadow: none;
+}
+
+::selection {
+    background: $maincolor;
+    text-shadow: none;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a{
+    color: $maincolor;
+    text-decoration: none;
+    border-bottom: $maincolor 1px dotted;
+}
+
+//typography
+p{
+    
+}
+h1, h2, h3{
+    font-weight: 300;
+    margin: 0px 2%;
+}
+h1{
+    font-size: 48px;
+    font-weight: 400;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+hr{
+    border: none;
+    border-top: $maincolor 1px solid;
+}
+.highlight{
+    color: $maincolor;
+}
+.center{
+    text-align: center;
+}
+button{
+    height: 32px;
+    color: #F4E6BB;
+    width: 92%;
+    margin: 16px 4%;
+    background: $maincolor;
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: none;
+}
+label{
+    width: 100%;
+    color: $white;
+    line-height: 24px;
+}
+input{
+    width: 96%;
+    height: 24px;
+    line-height: 24px;
+    padding: 4px 2%;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: $lightgrey;
+    &:focus{
+        -webkit-box-shadow: 0px 0px 0px 2px $maincolor inset;
+        box-shadow: 0px 0px 0px 2px $maincolor inset;
+    }
+}
+
+//icons
+.timeicon, .placeicon, .moneyicon{
+    width: 24px;
+    height: 24px;
+    margin: 4px 16px 4px 4%;
+    float: left;
+}
+.timeicon{
+    background: url("../img/time24.png") no-repeat center;
+    background: url("../img/time.png") no-repeat center / 24px 24px;
+    background: url("../img/time.svg") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;  
+}
+.placeicon{
+    background: url("../img/place24.png") no-repeat center;
+    background: url("../img/place.png") no-repeat center / 24px 24px;
+    background: url("../img/place.svg") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;  
+}
+.moneyicon{
+    background: url("../img/money24.png") no-repeat center;
+    background: url("../img/money.png") no-repeat center / 24px 24px;
+    background: url("../img/money.svg") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;  
+}
+
+//landing information
+.landing{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    background: $maincolor;
+    a{
+        color: $darkgrey;
+        border-bottom: solid $darkgrey dotted;
+    }
+    img{
+        width:100% !important;
+        height:auto;
+        display:block;
+        background: $darkgrey;
+    }
+    .info{
+        width: 100%;
+        background: $white;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 3;
+        padding-top: 16px;
+        h2{
+            margin: 0px;
+            line-height: 1.5;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+//main form field
+.formarea{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .formcontainer{
+        position: absolute;
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+    }
+    form{
+        width: 92%;
+        padding: 16px 4%;
+        background: $darkgrey;
+        p{
+            color: $white;
+        }
+    }
+    p{
+        width: 92%;
+        margin: 0px 4%;
+    }
+    h2{
+        color: $white;
+        margin: 8px 2%;
+    }
+    .loading{
+        width: 0px;
+        height: 8px;
+        background: $maincolor;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        -ms-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+        z-index: 2;
+        &.complete{
+            width: 100%;
+        }   
+    }
+    
+    .accountinput{
+        display: none;
+    }
+    .error{
+        display: none;
+        color: $maincolor;
+    }
+    .payment{
+        border: 2px solid $maincolor;
+        border-radius: 16px;
+        margin: 4px auto;
+        color: $white;
+        line-height: 32px;
+        height: 32px;
+        width: 80%;
+        overflow: hidden;
+        span{
+            width: 33.333333%;
+            display: block;
+            float: left;
+            cursor: pointer;
+            &.selected{
+                background: $maincolor;
+            }
+            &:first-of-type{
+                border-right: 2px solid $maincolor;
+                margin-right: -2px;
+            }
+            &:last-of-type{
+                border-left: 2px solid $maincolor;
+                margin-left: -2px;
+            }
+
+        }
+        
+    }
+}
+
+//the actual ticket
+.ticket{
+    position: absolute;
+    background: $white;
+    z-index: 2;
+    top: 0px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .ticketcontainer{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        margin-bottom: 16px;
+        .qrcode{
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            width: 160px;
+            height: 160px;
+            background-color: #F4E6BB;
+            background: #F4E6BB url("../img/qr160.png") no-repeat center;
+            background: #F4E6BB url("../img/qr.png") no-repeat center / 160px 160px;
+            background: #F4E6BB url("../img/qr.svg") no-repeat center;
+            -webkit-background-size: 160px 160px;
+            -moz-background-size: 160px 160px;
+            background-size: 160px 160px; 
+            z-index: 3;
+        }
+        .backgroundwrapper{
+            overflow: hidden;
+            width: 100%;
+            height: 160px;
+        }
+        img.background{
+            width:100% !important;
+            height:auto;
+            display:block;
+            background: $darkgrey;
+        }
+        .colorstrip{
+            width: 100%;
+            height: 32px;
+            background: $maincolor;
+            p{
+                text-align: right;
+                line-height: 32px;
+                color: $white;
+                margin: 0px 8px;
+                letter-spacing: 4px;
+            }
+        }
+    }
+    span.ticketfname, span.ticketlname{
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkgrey;
+    }
+    h1{
+        line-height: 44px;
+    }
+    h2{
+        line-height: 1.5;
+    }
+    .legal{
+        margin: 0px 2%;
+        text-align: justify;
+        font-size: 12px;
+        color: $mediumgrey;
+    }
+}
+
+
+
+

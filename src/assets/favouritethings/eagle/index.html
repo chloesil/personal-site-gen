@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" 
+      type="image/png" 
+      href="../favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Favourite Things</title>
+	<meta name="author" content="Chloe Silver" />
+	<meta name="description" content="The study of value held in our most prized possessions" />
+	<meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+	<meta name="Resource-type" content="Document" />
+	<meta name=viewport
+  content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+	<link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+<body>
+
+	 <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="http://chloesilver.ca/favouritethings#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+	<section id="story" class="story">
+
+		<img src="../img/img/eagle.jpg" class="fix">
+
+		<div class="text">
+			<img src="../img/icons/eagle.png">
+			<hr>
+			<p>I was very close with my father. I was twelve when he separated from my mother, and I was the only one of their four children to live with him instead of my mother.<br><br>
+
+We had a close relationship despite the long hours he always worked. He loved his family, but his career was also very important to him. His proudest moment came when I was 18. He brought home a shining crystal eagle, an award he had received for his years of service and achievement of excellence.<br><br>
+
+Six short months later, my father passed away. There were highs and there were lows, and this was the lowest low for me. My siblings did not have as much reverence for his belongings as me, and they all wanted to sell the eagle. It was very valuable and would bring them a good sum of money, even if they split it between them.<br><br>
+
+I was so horrified by the way they treated his belongings as if they were dollar signs, that I took the box and certificate of authentification for the eagle and burned both of them beyond recognition. Now, the eagle had lost almost all of its monetary value. I know it was a brash move, but its sentimental value was the important thing for me, and I had to destroy its value to my siblings.<br><br>
+
+I don’t regret what I did, even now that five years have passed. My siblings just didn’t understand the relationship that I shared with my father, or the fact that a monetarily valuable object can hold a type of value that is more important that money.
+
+</p><br><hr>
+
+			<table border="0" align="center" width="100%"><tr>
+				<td align="left" width="33%"><a href="../cork">
+					previous<br>
+					<img src="../img/lricons/lcork.png" class="next"></a>
+				</td>
+				<td align="center">
+					<a href="#" onClick="goSomewhere(); return false;">random<br>
+					<img src="../img/lricons/random.png" class="next"></a>
+				</td>
+				<td align="right" width="33%"><a href="../elk">
+					next<br>
+					<img src="../img/lricons/relk.png" class="next"></a>
+				</td>
+			</tr></table><hr><br>
+
+
+	</section>
+	<section id="squares">
+
+			<div class="intros"><center>
+			<a href="../object"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element object">
+			    </div>
+			</div></a>
+
+			<a href="../action"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element action">
+			    </div>
+			</div></a>
+
+			<a href="../location"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element location">
+			    </div>
+			</div></a>
+
+			<a href="../time"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element time">
+			    </div>
+			</div></a>
+
+			<a href="../value"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element svalue">
+			    </div>
+			</div></a>
+			</div>
+			<br><br><br>
+
+		</section>
+  <footer class="storyfoot">
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+<script type="text/javascript">
+    var urls = [
+        "../ball",
+        "../bear",
+        "../bell",
+        "../bird",
+        "../block",
+        "../book",
+        "../bowl",
+        "../car",
+        "../chain",
+        "../cork",
+        "../eagle",
+        "../elk",
+        "../flower",
+        "../fox",
+        "../jacket",
+        "../lamp",
+        "../medal",
+        "../metro",
+        "../passport",
+        "../piano",
+        "../plate",
+        "../rooster",
+        "../rosie",
+        "../skate",
+        "../stamp",
+        "../sweater",
+        "../tape",
+        "../transfer",
+        "../vase",
+        "../wall",
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+</body>
+
+</html>

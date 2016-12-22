@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" 
+      type="image/png" 
+      href="../favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Favourite Things</title>
+	<meta name="author" content="Chloe Silver" />
+	<meta name="description" content="The study of value held in our most prized possessions" />
+	<meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+	<meta name="Resource-type" content="Document" />
+	<meta name=viewport
+  content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+	<link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+<body>
+
+	 <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="http://chloesilver.ca/favouritethings#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+	<section id="story" class="story">
+
+		<img src="../img/img/medal.jpg" class="fix">
+
+		<div class="text">
+			<img src="../img/icons/medal.png">
+			<hr>
+			<p>I have always loved sports. They are one of the things I know I am really good at. My favourite time of the year was always when our regional team would pack our bags to head to the Maccabi Games, an annual soccer tournament of teams from all over North America. We saw it as the Jewish Olympics Games, complete with its own opening ceremony. We would walk down the aisle with the rest of the Canadians, proud to belong to something so large.<br><br>
+
+During the social gatherings of the tournament, we were encouraged to exchange pins from our regions as a token of friendship and good sportsmanship. I still have all of the pins I collected from both 2009 and 2010.<br><br>
+
+We took the bronze medal in a very close game against the eventual champions of the tournament. We had beaten them in practice just a few days before, but that’s just the way things went. Beyond our medal, I managed to score the position of top scorer in the tournament, which is the memory that I associate with the medal. Even though we only made it to third place, I knew that I had played the best I possibly could.<br><br>
+
+I don’t play much soccer anymore because my knees can’t take it like they used to, but also because I treasure the memories of the people I met and the accomplishments I achieved at that time. Every time I feel down, the medal reminds me of the positive things in life.
+
+
+
+</p><br><hr>
+
+			<table border="0" align="center" width="100%"><tr>
+				<td align="left" width="33%"><a href="../fox">
+					previous<br>
+					<img src="../img/lricons/lfox.png" class="next"></a>
+				</td>
+				<td align="center">
+					<a href="#" onClick="goSomewhere(); return false;">random<br>
+					<img src="../img/lricons/random.png" class="next"></a>
+				</td>
+				<td align="right" width="33%"><a href="../metro">
+					next<br>
+					<img src="../img/lricons/rmetro.png" class="next"></a>
+				</td>
+			</tr></table><hr><br>
+
+
+	</section>
+	<section id="squares">
+
+			<div class="intros"><center>
+			<a href="../object"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element object">
+			    </div>
+			</div></a>
+
+			<a href="../action"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element action">
+			    </div>
+			</div></a>
+
+			<a href="../location"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element location">
+			    </div>
+			</div></a>
+
+			<a href="../time"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element time">
+			    </div>
+			</div></a>
+
+			<a href="../value"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element svalue">
+			    </div>
+			</div></a>
+			</div>
+			<br><br><br>
+
+		</section>
+  <footer class="storyfoot">
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+<script type="text/javascript">
+    var urls = [
+        "../ball",
+        "../bear",
+        "../bell",
+        "../bird",
+        "../block",
+        "../book",
+        "../bowl",
+        "../car",
+        "../chain",
+        "../cork",
+        "../eagle",
+        "../elk",
+        "../flower",
+        "../fox",
+        "../jacket",
+        "../lamp",
+        "../medal",
+        "../metro",
+        "../passport",
+        "../piano",
+        "../plate",
+        "../rooster",
+        "../rosie",
+        "../skate",
+        "../stamp",
+        "../sweater",
+        "../tape",
+        "../transfer",
+        "../vase",
+        "../wall",
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+</body>
+
+</html>

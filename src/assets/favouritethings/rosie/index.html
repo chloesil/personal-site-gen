@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" 
+      type="image/png" 
+      href="../favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Favourite Things</title>
+	<meta name="author" content="Chloe Silver" />
+	<meta name="description" content="The study of value held in our most prized possessions" />
+	<meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+	<meta name="Resource-type" content="Document" />
+	<meta name=viewport
+  content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+	<link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+<body>
+
+	 <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="http://chloesilver.ca/favouritethings#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+	<section id="story" class="story">
+
+		<img src="../img/img/rosie.jpg" class="fix">
+
+		<div class="text">
+			<img src="../img/icons/rosie.png">
+			<hr>
+			<p>I got this keychain from a toy chest at Swiss chalet with my daughters. I love those nights when we all go out for dinner as a family, which doesn’t happen quite as often anymore. It was really cool to be able to pick a toy that my daughters had as well.<br><br>
+
+I wasn’t a huge fan of the Jetsons as a kid but in hindsight, I realize that Rosie is my favourite character. The way she emoted in a weird robotic way, like her mouth lighting up or the dials in her eyes turning, was so funny. And the way she was dressed like a maid, kind of like Hazel. Rosie was the underling, but she also had the snappiest lines in the whole show.<br><br>
+
+I keep Rosie hanging from my rear view mirror. She always faces forward and has been my low-budget GPS through four cars and at least twice as many years. I like the way she dances when the car is moving.<br><br>
+
+Obviously, it’s not just the character that the toy symbolizes. My favourite thing about Rosie is that she reminds me of my daughters’ childhoods and being together as a family. I like to keep little items as memories of pleasant experiences.
+
+
+</p><br><hr>
+
+			<table border="0" align="center" width="100%"><tr>
+				<td align="left" width="33%"><a href="../flower">
+					previous<br>
+					<img src="../img/lricons/lflower.png" class="next"></a>
+				</td>
+				<td align="center">
+					<a href="#" onClick="goSomewhere(); return false;">random<br>
+					<img src="../img/lricons/random.png" class="next"></a>
+				</td>
+				<td align="right" width="33%"><a href="../car">
+					next<br>
+					<img src="../img/lricons/rcar.png" class="next"></a>
+				</td>
+			</tr></table><hr><br>
+
+
+	</section>
+	<section id="squares">
+
+			<div class="intros"><center>
+			<a href="../object"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element object">
+			    </div>
+			</div></a>
+
+			<a href="../action"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element action">
+			    </div>
+			</div></a>
+
+			<a href="../location"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element location">
+			    </div>
+			</div></a>
+
+			<a href="../time"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element time">
+			    </div>
+			</div></a>
+
+			<a href="../value"><div id="contain">
+			    <div id="dummy"></div>
+			    <div class="element svalue">
+			    </div>
+			</div></a>
+			</div>
+			<br><br><br>
+
+		</section>
+  <footer class="storyfoot">
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+<script type="text/javascript">
+    var urls = [
+        "../ball",
+        "../bear",
+        "../bell",
+        "../bird",
+        "../block",
+        "../book",
+        "../bowl",
+        "../car",
+        "../chain",
+        "../cork",
+        "../eagle",
+        "../elk",
+        "../flower",
+        "../fox",
+        "../jacket",
+        "../lamp",
+        "../medal",
+        "../metro",
+        "../passport",
+        "../piano",
+        "../plate",
+        "../rooster",
+        "../rosie",
+        "../skate",
+        "../stamp",
+        "../sweater",
+        "../tape",
+        "../transfer",
+        "../vase",
+        "../wall",
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link href="http://thoughtsvisualized.blogspot.ca/favicon.ico" rel="icon" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hear & Now - An App by Chloe Silver</title>
+	<meta name="author" content="Chloe Silver" />
+	<meta name="description" content="Hear & Now App" />
+	<meta name="keywords"  content="hear,now,app,story,listen,record,stories,travel,narrative,narrate,voice" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" href="css/simpleplayer.css" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div id="openModal" class="modalDialog"><div><br>
+	<a href="#close" title="Close" class="close">x</a>
+	<span class="modalbig">Want to hear more?</span><br><br>
+    <span class="modalsmall">Unfortunately for both of us, this app is only an idea at this stage. If you want to let me know what you think of it or berate me for leading you on, you can contact me at <a href="mailto:hello@chloesilver.ca" target="_top" class="alink">hello@chloesilver.ca</a>.</span><br><br>
+</div></div>
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+    		<img src="imgs/logo.png" width="100px" height="100px" class="logo">
+    		<h2>Hear & Now</h2>
+    		<h1><span class="tra">Visit</span> hidden places<br><span class="tra">in the </span>secret corners<span class="tra"> of the world.</span></h1>
+    		<audio class="player" src="sounds/leaden.mp3"></audio>
+    		<p><table border="0" width="50%" align="center"><tr>
+    			<td><a href="#openModal"><img src="imgs/appstore.png"></a></td>
+    			<td><a href="#page2"><img src="imgs/learn.png"></a></td>
+    		</tr></table></p>
+	    </div>
+
+	    <div class="section" id="section2">
+	    	<div class="intro">
+				<table border="0" width="40%" align="center"><tr>
+    			<td valign="top"><img id="gifdiv" src="imgs/Listenstatic.png" class="iphone"></td>
+    			<td cellpadding="10px" align="left" valign="top"><h1>Listen</h1><span class="para">Find a story near you and travel to its location to listen to it.<br><br>You can listen to stories anywhere in the world – as long as you're there!</span>
+
+    			<br><br><audio class="player" src="sounds/alone.mp3"></audio>
+    			</td>
+    			</tr></table>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+				<table border="0" width="40%" align="center"><tr>
+    			<td valign="top"><img id="gifdiv2" src="imgs/Recordstatic.png" class="iphone"></td>
+    			<td cellpadding="10px" align="left" valign="top"><h1>Record</h1><span class="para">Share your own stories and experiences with everyone else.<br><br>Anyone can listen to your story when they are standing in the spot you recorded the story.</span>
+
+    			<br><br><audio class="player" src="sounds/deany.mp3"></audio>
+    			</td>
+    			</tr></table>
+	    	</div>
+	    </div>
+	    <div class="section" id="section4">
+	    	<div class="intro">
+	    		<img src="imgs/train.png" class="logo">
+    		<h1><span class="tra">There's no better way<br>to explore the world than</span><br>Hear & Now.</h1>
+    		<audio class="player" src="sounds/akko.mp3"></audio><br><br>
+    		<a href="#openModal"><img src="imgs/appstore.png"></td>
+	    	</div>
+	    </div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+		  $("#gifdiv").on('click', function() {
+		    $(this).attr('src', 'imgs/Listen.gif');
+		  });
+		  $("#gifdiv2").on('click', function() {
+		    $(this).attr('src', 'imgs/Record.gif');
+		  });
+	</script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3'],
+			    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
+			    loopTop: true,
+			    loopBottom: true
+			});
+	    });
+    </script>
+    <script src="js/jquery.simpleplayer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var settings = {
+                progressbarWidth: '0px',
+                progressbarHeight: '0px',
+                defaultVolume: 0.8
+            };
+            $(".player").player(settings);
+        });
+    // google analytics stuff
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-66538906-1', 'auto');
+	ga('send', 'pageview');
+	ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
+    </script>
+</body>
+</html>

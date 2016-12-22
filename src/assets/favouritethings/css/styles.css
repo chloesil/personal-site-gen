@@ -1,0 +1,601 @@
+/* CSS
+ * --------------------------------------- */
+html,body{
+	color: #000;
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+  font-family: 'harriet_textregular', serif;
+  font-size: 15px;
+}
+
+ .display{
+  font-family: 'harriet_displayblack', serif;
+ }
+ .medium{
+  font-family: 'harriet_displaymedium', serif;
+  font-size: 45px;
+ }
+ .small{
+  font-size: 20px;
+ }
+ .light{
+  font-family: 'harriet_textlight', serif;
+ }
+
+ a {
+  text-decoration: none;
+ }
+
+/* Nav
+ * --------------------------------------- */
+.navcf {
+  position:fixed;
+  height:43px;
+  width:45px;
+  top:0;
+  right:0px;
+  margin: 10px 20px 0 0 ;
+}
+.lstories {
+  position:fixed;
+  height:43px;
+  width:45px;
+  top:75px;
+  right:0;
+  margin: 10px 20px 0 0 ;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.lstories img:hover{
+  opacity:0;
+}
+.ldata {
+  position:fixed;
+  height:43px;
+  width:45px;
+  top:115px;
+  right:0;
+  margin: 10px 20px 0 0 ;
+}
+
+.navcf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.navcf img.aft:hover {
+  opacity:0;
+}
+#nav ul.sub-nav {
+    display: none;
+    list-style: none;
+}
+
+#nav ul.visible {
+    display: block;
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Top
+ * --------------------------------------- */
+.top{
+  background: url("../img/patches.png") no-repeat center center;
+  height:100%;
+  width:100%;
+}
+
+.welcome{
+  font-size: 20px;
+  width:40%;
+  height:100%;
+  color:#ffffff;
+  padding-top:8%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.width{
+  width: 100%;
+}
+
+.floating{
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-top: 50px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+/* Intro
+ * --------------------------------------- */
+.intro{
+  background: url("../img/bezier.png") center center;
+  background-size: cover;
+}
+
+.welcomein{
+  font-size: 20px;
+  width:60%;
+  height:100%;
+  padding-top:8%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.big {
+  font-size: 150px;
+  margin-top: -50px;
+  font-family: "harriet_displayblack";
+  color:#888;
+}
+
+a.big {
+  text-decoration: none;
+}
+
+.para {
+  font-size: 16px;
+  color:#000;
+}
+
+.introtitle {
+  font-size: 22px;
+  color:#000;
+}
+
+/* Stories
+ * --------------------------------------- */
+#stories{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.intros{
+  margin-top: 8%;
+  margin-right: auto;
+  margin-left: auto;
+  width:50%;
+  margin-bottom: 50px;
+}
+
+#contain {
+    display: inline-block;
+    position: relative;
+    width: 14.75%;
+    margin: 10px 24px 0px 24px;
+}
+
+#dummy {
+    margin-top: 100%;
+}
+.element {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.element:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+.sweater{
+background:url(../img/icons/sweater.png) center center;
+background-size: 100% 100%;
+}
+
+.bowl{
+background:url(../img/icons/bowl.png) center;
+background-size: 100% 100%;
+}
+
+.chain{
+background:url(../img/icons/chain.png) center;
+background-size: 100% 100%;
+}
+
+.book{
+background:url(../img/icons/book.png) center;
+background-size: 100% 100%;
+}
+
+.passport{
+background:url(../img/icons/passport.png) center;
+background-size: 100% 100%;
+}
+
+.rosie{
+background:url(../img/icons/rosie.png) center;
+background-size: 100% 100%;
+}
+
+.lamp{
+background:url(../img/icons/lamp.png) center;
+background-size: 100% 100%;
+}
+
+.piano{
+background:url(../img/icons/piano.png) center;
+background-size: 100% 100%;
+}
+
+.car{
+background:url(../img/icons/car.png) center;
+background-size: 100% 100%;
+}
+
+.ball{
+background:url(../img/icons/ball.png) center;
+background-size: 100% 100%;
+}
+
+.bear{
+background:url(../img/icons/bear.png) center center;
+background-size: 100% 100%;
+}
+
+.bell{
+background:url(../img/icons/bell.png) center;
+background-size: 100% 100%;
+}
+
+.bird{
+background:url(../img/icons/bird.png) center;
+background-size: 100% 100%;
+}
+
+.block{
+background:url(../img/icons/block.png) center;
+background-size: 100% 100%;
+}
+
+.cork{
+background:url(../img/icons/cork.png) center;
+background-size: 100% 100%;
+}
+
+.eagle{
+background:url(../img/icons/eagle.png) center;
+background-size: 100% 100%;
+}
+
+.elk{
+background:url(../img/icons/elk.png) center;
+background-size: 100% 100%;
+}
+
+.fox{
+background:url(../img/icons/fox.png) center;
+background-size: 100% 100%;
+}
+
+.jacket{
+background:url(../img/icons/jacket.png) center;
+background-size: 100% 100%;
+}
+
+.medal{
+background:url(../img/icons/medal.png) center;
+background-size: 100% 100%;
+}
+
+.metro{
+background:url(../img/icons/metro.png) center center;
+background-size: 100% 100%;
+}
+
+.plate{
+background:url(../img/icons/plate.png) center;
+background-size: 100% 100%;
+}
+
+.rooster{
+background:url(../img/icons/rooster.png) center;
+background-size: 100% 100%;
+}
+
+.skate{
+background:url(../img/icons/skate.png) center;
+background-size: 100% 100%;
+}
+
+.stamp{
+background:url(../img/icons/stamp.png) center;
+background-size: 100% 100%;
+}
+
+.tape{
+background:url(../img/icons/tape.png) center;
+background-size: 100% 100%;
+}
+
+.transfer{
+background:url(../img/icons/transfer.png) center;
+background-size: 100% 100%;
+}
+
+.vase{
+background:url(../img/icons/vase.png) center;
+background-size: 100% 100%;
+}
+
+.wall{
+background:url(../img/icons/wall.png) center;
+background-size: 100% 100%;
+}
+
+.car{
+background:url(../img/icons/car.png) center;
+background-size: 100% 100%;
+}
+
+.flower{
+background:url(../img/icons/flower.png) center;
+background-size: 100% 100%;
+}
+
+/* Data
+ * --------------------------------------- */
+
+#data{
+  margin-left:10%;
+  margin-right:10%;
+}
+.object{
+background:url(../img/object.png) center;
+background-size: 100% 100%;
+}
+.action{
+background:url(../img/action.png) center;
+background-size: 100% 100%;
+}
+.location{
+background:url(../img/location.png) center;
+background-size: 100% 100%;
+}
+.time{
+background:url(../img/time.png) center;
+background-size: 100% 100%;
+}
+.svalue{
+background:url(../img/svalue.png) center;
+background-size: 100% 100%;
+}
+
+#squares{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#squares .intros{
+  margin-top: 8%;
+  width:45%;
+  margin-left: 45%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#squares #contain {
+  display: inline-block;
+  position: relative;
+  width: 17.5%;
+  margin: 5px 5px 0px 5px;
+}
+
+.icon{
+  width:20px;
+  height:20px;
+}
+
+.icon2{
+  width:40px;
+  height:40px;
+}
+
+/* Story Page
+ * --------------------------------------- */
+#story .text {
+  position: relative;
+  width:45%;
+  margin-left: 45%;
+  margin-top: 50px;
+  line-height: 25px;
+}
+.fix {
+  position: fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  width:42%;
+}
+.next { 
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.next:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+#story a{
+  text-decoration: none;
+  color:#000;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+#story a:hover{
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+
+/* Footer
+ * --------------------------------------- */
+
+footer p{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  color:rgba(0,0,0,0.3);
+}
+.storyfoot{
+  margin-left: 38%;
+}
+
+/* ------ Media Queries
+-----------------------------------------------*/
+@media only screen and (min-width: 1214px) {
+    /* monitors */
+
+.top{
+  background: url("../img/patches.png") center center;
+  background-size: cover;
+}
+.tablesmall{
+  display:none;
+}
+
+
+    }
+
+@media only screen and (min-width: 1122px) and (max-width: 1213px) {
+    /* monitors */
+
+#contain {
+  display: inline-block;
+  position: relative;
+  width: 15.5%;
+  margin: 5px 5px 0px 5px;
+}
+.tablesmall{
+  display:none;
+}
+
+
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 1121px) {
+    /* monitors */
+
+#contain {
+  display: inline-block;
+  position: relative;
+  width: 16.5%;
+  margin: 5px 5px 0px 5px;
+}
+
+.tablesmall{
+  display:none;
+}
+
+
+    }
+
+@media only screen and (max-width: 767px) {
+
+#contain {
+  display: inline-block;
+  position: relative;
+  width: 15.5%;
+  margin: 5px 5px 0px 5px;
+}
+
+.welcome{
+  width:75%;
+}
+.welcomein{
+  width:75%;
+}
+.intros{
+  width:75%;
+}
+.tablebig{
+  display:none;
+}
+
+.tablesmall{
+  display:block;
+}
+
+}
+
+@media only screen and (max-device-width: 767px) {
+
+#contain {
+  display: inline-block;
+  position: relative;
+  width: 14.5%;
+  margin: 5px 5px 0px 5px;
+}
+
+ .medium{
+  font-family: 'harriet_displaymedium', serif;
+  font-size: 30px;
+ }
+
+
+.welcome{
+  width:75%;
+}
+.welcomein{
+  width:75%;
+}
+.intros{
+  width:75%;
+}
+
+
+.tablebig{
+  display:none;
+}
+
+.tablesmall{
+  display:block;
+}
+
+
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Favourite Things</title>
+      <meta name="author" content="Chloe Silver" />
+      <meta name="description" content="The study of value held in our most prized possessions" />
+      <meta name="keywords"  content="design,creative,data,visualization,code,illustration,infographic,book,print,web" />
+      <meta name="Resource-type" content="Document" />
+      <meta name=viewport
+      content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+      <link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+      <link rel="icon" type="image/png" href="../favicon.png">
+      <link href="../css/c3/c3.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <nav><ul id="nav">
+    <li class="parent">
+        <div class="navcf">
+          <img class="bef" src="../img/logo2.png">
+          <img class="aft" src="../img/logo.png">
+        </div>
+        <ul class="sub-nav">
+            <li><a href="../#stories"><img class="lstories" src="../img/lstories.png"></a></li>
+            <li><a href="http://chloesilver.ca/favouritethings#data"><img class="ldata" src="../img/ldata.png"></a></li>
+        </ul>
+    </li>
+    </ul></nav>
+
+  <section class="stories" id="stories">
+
+    <div class="intros">
+      <div class="medium">Map Of Actions</div>
+      <hr>
+      This line chart displays the history and events that happened to each object. You can zoom in on and drag the chart to get a closer look.
+    </div>
+
+    <div id="chart"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="../js/c3action.js"></script>
+    <script src="../js/c3/c3.js"></script>
+    <script>
+      var chart = c3.generate({
+        data: {
+        xs: {
+            'piano': 'x1',
+            'passport': 'x2',
+            'lamp': 'x3',
+            'plate': 'x4',
+            'tape': 'x5',
+            'sweater': 'x6',
+            'car': 'x7',
+            'bell': 'x8',
+            'bowl': 'x9',
+            'bear': 'x10',
+            'rooster': 'x11',
+            'stamp': 'x12',
+            'book': 'x13',
+            'rosie': 'x14',
+            'ball': 'x15',
+            'fox': 'x16',
+            'wall': 'x17',
+            'eagle': 'x18',
+            'medal': 'x19',
+            'jacket': 'x20',
+            'cork': 'x21',
+            'block': 'x22',
+            'chain': 'x23',
+            'vase': 'x24',
+            'transfer': 'x25',
+            'bird': 'x26',
+            'flower': 'x27',
+            'metro': 'x28',
+            'skate': 'x29',
+            'elk': 'x30',
+        },
+        columns: [
+            ['x1',1962, 1986, 2020],
+            ['x2',1967, 2020],
+            ['x3',1977, 2007, 2020],
+            ['x4',1982, 1993, 2020],
+            ['x5',1987, 2003, 2020],
+            ['x6',1988, 2012, 2020],
+            ['x7',1992, 1993],
+            ['x8',1993, 1997, 2020],
+            ['x9',1995, 2006, 2014, 2020],
+            ['x10',1997, 2020],
+            ['x11',1997, 2020],
+            ['x12',1998, 2020],
+            ['x13',1999, 2020],
+            ['x14',2001, 2020],
+            ['x15',2002, 2020],
+            ['x16',2009, 2012, 2020],
+            ['x17',2010, 2020],
+            ['x18',2010, 2011, 2020],
+            ['x19',2010, 2020],
+            ['x20',2010, 2020],
+            ['x21',2010, 2020],
+            ['x22',2011, 2020],
+            ['x23',2011, 2012, 2020],
+            ['x24',2013, 2020],
+            ['x25',2013, 2020],
+            ['x26',2013, 2020],
+            ['x27',2014, 2020],
+            ['x28',2014, 2020],
+            ['x29',2014, 2020],
+            ['x30',2014, 2020],
+            ['piano', 290, 290, 290],
+            ['passport', 280, 280],
+            ['lamp', 270, 270, 270],
+            ['plate', 260, 260, 260],
+            ['tape', 250, 250, 250],
+            ['sweater', 240, 240, 240],
+            ['car', 230, 230],
+            ['bell', 220, 220, 220],
+            ['bowl', 210, 210, 210, 210],
+            ['bear', 200, 200],
+            ['rooster', 190, 190],
+            ['stamp', 180, 180],
+            ['book', 170, 170],
+            ['rosie', 160, 160],
+            ['ball', 150, 150],
+            ['fox', 140, 140, 140],
+            ['wall', 130, 130],
+            ['eagle', 120, 120, 120],
+            ['medal', 110, 110],
+            ['jacket', 100, 100],
+            ['cork', 90, 90],
+            ['block', 80, 80],
+            ['chain', 70, 70, 70],
+            ['vase', 60, 60],
+            ['transfer', 50, 50],
+            ['bird', 40, 40],
+            ['flower', 30, 30],
+            ['metro', 20, 20],
+            ['skate', 10, 10],
+            ['elk', 0, 0],
+        ]
+        },
+        regions: {
+            'x1': [{'start':1980, 'end':2000, 'style':'dashed'},{'start':3}], // currently 'dashed' style only
+            'data2': [{'end':3}]
+        },
+        axis: {
+            x: {
+                max: 2015,
+                min: 1962,
+                padding: {top:0, bottom:0}
+            },
+            y: {
+                show: false
+            }
+        },
+        zoom: {
+            enabled: true
+        },
+        tooltip: {
+        contents: tooltip_contents,
+        // grouped: false,
+        },
+        color: {
+        pattern: ["#533112","#9F2921","#435083","#B9717D","#D22027","#C05927","#BE7DB4","#B0298A","#E8C154","#E6C1DB","#561F0E","#553E98","#548F40","#9DCBE9","#2A2C77","#84451E","#8310B2","#B0B0B0","#996548","#1D517B","#BA8731","#3FBCA2","#696A6A","#32B44A","#107B94","#8F8762","#F4800C","#E1BE23","#A2C03A","#898093"]
+        }
+      });
+    </script>
+
+    <a href="../object"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element object">
+        </div>
+    </div></a>
+
+    <a href="../action"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element action">
+        </div>
+    </div></a>
+
+    <a href="../location"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element location">
+        </div>
+    </div></a>
+
+    <a href="../time"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element time">
+        </div>
+    </div></a>
+
+    <a href="../value"><div id="contain">
+        <div id="dummy"></div>
+        <div class="element svalue">
+        </div>
+    </div></a>
+    
+  </section>
+  <footer>
+    <p>all content created by chloe silver 2014-2015</p>
+  </footer>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.parent').click(function() {
+          $('.sub-nav').toggleClass('visible');
+      });
+  });
+
+  </script>
+
+  </body>
+</html>

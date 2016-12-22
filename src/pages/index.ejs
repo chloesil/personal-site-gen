@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-home'); %>
+
+  <body>
+
+    <%- include('_header-nav'); %>
+
+    <!-- Carousel begins -->
+    <section class="carousel">
+      <div><a href="causes"><img src="img/caro2.png" class="caroclass"></a></div>
+      <div><a href="beef"><img src="img/caro1.png" class="caroclass"></a></div>
+      <div><a href="expo2025"><img src="img/caro3.png" class="caroclass"></a></div>
+      <div><a href="desire"><img src="img/caro4.png" class="caroclass"></a></div>
+    </section>
+    <!-- Carousel ends -->
+
+    <!-- Work Tiles begin -->
+    <section class="work">
+      <%- include('_project-tile', {
+        id: 'beef',
+        url: 'beef',
+        title: 'What\'s Your Beef',
+        description: 'Digital and Print Brochure'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'revo',
+        url: 'revolution',
+        title: 'rEVOLution',
+        description: 'Event Branding'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'days',
+        url: '21days',
+        title: '21 Days',
+        description: 'Mobile App Design'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'bean',
+        url: 'flora',
+        title: 'Flora & Fauna',
+        description: 'Material Design'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'desire',
+        url: 'desire',
+        title: 'Objects of Desire',
+        description: 'Experimental Web Design'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'mag',
+        url: 'upfront',
+        title: 'Upfront Mag',
+        description: 'Editorial Design'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'causes',
+        url: 'causes',
+        title: 'Downfall by Numbers',
+        description: 'Interactive Data Visualization'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'hear',
+        url: 'hearnow',
+        title: 'Hear & Now',
+        description: 'Mobile App Design'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'fav',
+        url: 'favethings',
+        title: 'Favourite Things',
+        description: 'Experimental Web Design'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'expo',
+        url: 'expo2025',
+        title: 'Expo 2025',
+        description: 'Event Branding'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'inuitart',
+        url: 'inuitart',
+        title: 'Cultural Networks',
+        description: 'Installation Design Augmented Reality'
+      }); %>
+      <%- include('_project-tile', {
+        id: 'fgs',
+        url: 'fgs',
+        title: 'FGS Turns 50',
+        description: 'Editorial and Installation Design'
+      }); %>
+    </section>
+
+    <%- include('_footer-about'); %>
+
+  </body>
+  
+</html>

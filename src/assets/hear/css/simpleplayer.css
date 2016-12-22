@@ -1,0 +1,27 @@
+.simple-player-container {
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: red;
+}
+.simple-player-container > div > ul {
+    margin: 0;
+    padding-left: 0;
+}
+.simpleplayer-play-control {
+    background-image: url('../imgs/icoear.png');
+    display: block;
+    width: 19px;
+    height: 22px;
+    bottom: -2px;
+    position: relative;
+}
+.simpleplayer-stop-control {
+    background-image: url('../imgs/icopause.png');
+    display: block;
+    width: 19px;
+    height: 22px;
+    bottom: -2px;
+    position: relative;
+}

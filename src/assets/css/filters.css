@@ -1,0 +1,366 @@
+.filters {
+border-style: solid;
+border-width: 1px 0px 0px 0px;
+border-color: black;
+text-align:center;
+}
+
+.filter {
+display:inline-block;
+margin: 0 auto;
+}
+
+/* ------ Squares
+-----------------------------------------------*/
+
+.revo{
+background:url(../img/th/revo.png) top center;
+}
+
+.parkey{
+background:url(../img/th/parkey.png) center;
+}
+
+.beef{
+background:url(../img/th/beef.png) center;
+}
+
+.fruit{
+background:url(../img/th/fruit.png) center;
+}
+
+.homeapp{
+background:url(../img/th/home.png) center;
+}
+
+.desire{
+background:url(../img/th/desire.png) center;
+}
+
+.great{
+background:url(../img/th/food.png) ;
+}
+
+.fgs{
+background:url(../img/th/fgs.png) center;
+}
+
+.expo{
+background:url(../img/th/expo.png) center;
+}
+
+.nothing{
+background:url(../img/th/nothing.png);
+}
+
+.heart{
+background:url(../img/th/heart.png) ;
+}
+
+
+/* ------ Media Queries
+-----------------------------------------------*/
+@media only screen and (min-width: 1285px) {
+    /* monitors */
+
+
+#content {
+margin:0px auto;
+margin-top:0px;
+width:90%;
+padding:0px 20px 40px 10px;
+}
+
+/* ------ filtrey
+-----------------------------------------------*/
+
+.filters {
+clear:both;
+width:90%;
+margin-top:45px;
+margin: 0 auto;
+}
+
+.filters .filter {
+float:left;
+clear:both;
+width:90%;
+padding:10px;
+margin:0;
+background:#545454;
+background:rgba(255, 255, 255, .1);
+color:#fff;
+}
+
+.filters .filter a {
+float:left;
+display:block;
+padding:5px;font-size:11px;
+text-transform:uppercase;
+outline:none;
+}
+
+.filters .filter .active {
+background:#eee;
+color:#111;
+}
+
+.filters .container {
+clear:both;
+width:100%;
+position:relative;
+}
+
+.filters .container ul,
+.filters .container ul li {
+display:block;
+float:left;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.filters .container ul li {
+margin:0;
+font-size:0;
+line-height:0;
+}
+
+.filters .container a {
+display:block;
+width:312px;
+height:312px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1284px) {
+    /* tablets and desktop */
+
+
+#content {
+margin:10px auto;
+margin-top:0px;
+width:720px;
+padding:0px 10px 10px 10px;
+}
+
+/* ------ filtrey
+-----------------------------------------------*/
+
+.filters {
+clear:both;
+width:675px;
+margin-top:45px;
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+.filters .filter {
+float:left;
+clear:both;
+width:655px;
+padding:10px;
+margin:0;
+background:#545454;
+background:rgba(255, 255, 255, .1);
+color:#fff;
+}
+
+.filters .filter a {
+float:left;
+display:block;
+padding:5px;
+font-size:11px;
+text-transform:uppercase;
+outline:none;
+}
+
+.filters .filter .active {
+background:#eee;
+color:#111;
+}
+
+.filters .container {
+clear:both;
+width:100%;
+position:relative;
+}
+
+.filters .container ul,
+.filters .container ul li {
+display:block;
+float:left;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.filters .container ul li {
+margin:0;
+font-size:0;
+line-height:0;
+}
+
+.filters .container a {
+display:block;
+width:225px;
+height:225px;
+}
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+    /* phones */
+
+
+#content {
+margin:10px auto;
+margin-top:0px;
+width:450px;
+padding:0px 10px 10px 10px;
+}
+
+/* ------ filtrey
+-----------------------------------------------*/
+
+.filters {
+clear:both;
+width:430px;
+margin-top:45px;
+margin: 0 auto;
+}
+
+.filters .filter {
+float:left;
+clear:both;
+width:420px;
+padding:10px;
+margin:0;
+background:#545454;
+background:rgba(255, 255, 255, .1);
+color:#fff;
+}
+
+.filters .filter a {
+float:left;
+display:block;
+padding:5px;
+font-size:11px;
+text-transform:uppercase;
+outline:none;
+}
+
+.filters .filter .active {
+background:#eee;
+color:#111;
+}
+
+.filters .container {
+clear:both;
+width:100%;
+position:relative;
+}
+
+.filters .container ul,
+.filters .container ul li {
+display:block;
+float:left;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.filters .container ul li {
+margin:0;
+font-size:0;
+line-height:0;
+}
+
+.filters .container a {
+display:block;
+width:215px;
+height:215px;
+}
+
+}
+
+@media only screen and (max-width: 449px) {
+    /* portrait phones */
+
+
+#content {
+margin:0px auto;
+width:100%;
+padding:0px 10px 10px 10px;
+}
+/* ------ filtrey
+-----------------------------------------------*/
+
+
+.filters {
+clear:both;
+width:100%;
+margin-top:45px;
+margin: 0 auto;
+}
+
+.filter{
+	display:none;
+}
+
+.filters .filter {
+float:left;
+clear:both;
+width:360px;
+padding:10px;
+margin:0;
+background:#545454;
+background:rgba(255, 255, 255, .1);
+color:#fff;
+}
+
+.filters .filter a {
+float:left;
+display:block;
+padding:5px;
+font-size:11px;
+text-transform:uppercase;
+outline:none;}
+
+.filters .filter .active {
+background:#eee;
+color:#111;
+}
+
+.filters .container {
+clear:both;
+width:100%;
+position:relative;
+}
+
+.filters .container ul,
+.filters .container ul li {
+display:block;
+float:left;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.filters .container ul li {
+margin:0;
+font-size:0;
+line-height:0;
+}
+
+.filters .container a {
+display:block;
+width:175px;
+height:175px;
+}
+
+}
+

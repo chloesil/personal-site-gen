@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-content'); %>
+
+  <body>
+    
+    <%- include('_header-nav'); %>
+
+    <section class="work-content"><br>
+
+      <img src="img/21days/splash.png" class="splash-image">
+
+      <div class="infopage">
+            
+        <div class="content" id="content"><p>
+
+        <div class="question bold"><span class="capital">Q: </span>How can we build good habits that will stand the test of time?</div><br>
+
+        <div class="question bold"><span class="capital">A: </span>21 Days</div><div class="description bold">a mobile app</div>21 Days is a revolutionary new way to build good habits that will stick. Using the mobile app, you can find other like-minded people who want to complete the same goal, and help each other to achieve a lasting habit.</p>
+        <p>The app was the first place winner of an amazing Startup Weekend held in Toronto in September 2015.</p>
+        <p><span class="bold">The goal of the app is to provide users with the tool to achieve their goals through habit forming tasks. Research has shown that it only takes 21 Days to build a habit, and this app guides users with simple tasks throughout that time to ensure that the habit will stick.</span></p>
+
+        <p class="bold">Problem Definition</p>
+        <p>As humans, we inherently have room for improvement. Whether it’s taking more time to exercise, learning a new skill, or simply remembering to floss your teeth, everyone has a habit they wish they could stick to. But how do you build a habit? It can be too easy to put aside when other parts of life keep you too busy to remember your habit at all.</p>
+
+        <p class="bold">Target Audience</p>
+        <p>This problem could easily apply to any person, but we wanted to narrow our target audience to a sector that we know has trouble sticking to habits: millennials.</p>
+
+        <p>Millennials are quick to jump on trends, but often lose interest after a short amount of time. Especially when I think about myself or my friends wanting to start a new habit, it can be hard to set time aside when school, work, and a social life are all vying for attention.</p>
+
+        <p class="bold">Competitors</p>
+        <p>With a short google search, we found that there are already a multitude of apps for forming habits in the market. What would make us unique? And what was it about these apps that kept people coming back to them (or failed to keep them coming back)?</p>
+
+        <p class="bold">Streaks</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>Streaks uses gamification. As the name says, if you log your habit into the app every day, you’ll keep your streak going. But was that on its own a strong enough pull? What investment do people really have with earning points in an app that they’ve just downloaded?</p>
+          </div>
+          <img src="img/21days/streaks.png" class="pull-right">
+        </div>
+
+        <p class="bold">GoalsOnTrack</p>
+        <p>GoalsOnTrack is extremely difficult to set up, so we knew that the onboarding process needed to be as simple as possible.</p>
+        <img src="img/21days/goalsontrack.png" class="imgs">
+
+        <p class="bold">Strides</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>Strides doesn’t have much of a stickiness factor beyond its excellent dashboard of stats and graphs to track progress, which we could see was very descriptive and could be motivating but probably not on its own. What would keep users motivated when they saw an empty dashboard with nothing in it? </p>
+          </div>
+          <img src="img/21days/strides1.png" class="pull-right">
+        </div>
+
+        <p>An interesting review of Strides from the Apple app store page:</p>
+        <img src="img/21days/strides2.png" class="imgs">
+
+        <p class="bold">Challenges</p>
+        <p>One challenge we knew we would face from the outset was how to keep millennials interested enough in the app to actually complete the process of setting a habit. We knew that the process only takes 21 days, so we aimed to display that in our design as much as possible. Heck, we even named the app 21 Days. Knowing that keeping something up for three short weeks will provide you with success was part of our unique selling proposition. But that alone might not be sticky enough to keep users interested for three weeks straight.</p>
+
+        <p>During a streak of inspiration late on the first night of the hackathon, we played with the idea of embarrassment as a motivational factor. If a user were to be held accountable to others, perhaps they would feel more motivated to keep going. We played off the idea of Alcoholics Anonymous and sponsorship. If you have someone to rely on, who can relate to your goal, will that motivate you to keep going?</p>
+
+        <p>We felt like we were on the right path, but at this point we needed some validation.</p>
+
+        <p class="bold">Survey</p>
+        <p>While we knew that we wanted to help these people to build habits, we needed more information about how millennials feel about building habits, their methods, and the habits themselves. We created a short survey to test whether our assumptions were correct.</p>
+
+        <p>We based our questions around what might keep someone motivated or cause them to lose focus, and whether they would accept help from friends/family, or even strangers (who had expertise in their goal area).</p>
+
+        <p>We shared the survey with our social networks as a start but of course, this would create a small bias by only gathering information from people we knew. It was fortuitous that the hackathon took place on York University’s Keele campus, as our target market for the app was literally all around us. We took the survey to the student centre on campus to interview people in person.</p>
+
+        <p>One stroke of genius that I had at this point was to use caffeinated chocolate provided by the hackathon sponsor to tempt passersby to answer the survey questions. At least partly because of this (a mixture of giving away and eating the chocolate ourselves), we received over 160 responses to our survey in under two hours. That’s pretty good for a weekend hackathon!</p>
+
+        <p class="bold">Some interesting takeaways from the survey</p>
+        <p>We included an area for respondents to enter whatever goals they may have had. We received some extremely thoughtful answers (which proved that millennials do think about self-improvement), and the goals were attainable (which proved that these habits could be formed).</p>
+        <p class="pullquote">I want to be a better public speaker. I'd also like to gain motivation to floss every day.</p>
+        <p class="pullquote">Be more active, be more consistently productive in general, fix my sleeping pattern, fix my diet, get my finances in order.</p>
+        <p class="pullquote">Healthy eating, decrease carbon footprint, being more outdoors, limiting technology use, being involved in extra curriculars</p>
+        <p class="pullquote">Eat less meat, and more vegetables/meatless meals. become more in touch with my emotions. go to bed on time. be more responsive to texts/e mails learn american sign language</p>
+        <p>The responses to whether the respondent would accept help in building their habit from friends/family, and from strangers who were experts in the subject, was pretty much the same (at around 82%) which proved that help from others would be important, and that it didn’t have to be someone the user knows personally.</p>
+
+        <img src="img/21days/survey1.png" class="imgs">
+
+        <p>Poor time management and lack of focus were the most popular causes for loss of motivation in building a habit, which gave us the answer to how to frame our app.</p>
+
+        <img src="img/21days/survey2.png" class="imgs">
+
+        <p class="bold">The Moment of Clarity</p>
+        <p>The survey clearly showed us what our unique selling proposition would be. On top of building out a schedule and reminders for the tasks within building a habit (the barebones functionality), we would also provide two ways for the user to be accountable to their habit:</p>
+        <ol>
+          <li>For users who know how to build their habit: the user elects to publicize their habit building on Facebook. When they complete a daily task, the app will post to Facebook for them and gather congratulatory comments/likes from their friends. If they don’t complete their goal, the app will post to Facebook to announce that they haven’t completed their goal. Sort of a carrot-or-the-stick situation.</li>
+          <li>For users who may not know how to go about building their habit: the app matches them with other like-minded people in the app who are completing the same goal. They can chat with these other users, some of whom are industry professionals.</li>
+        </ol> 
+        <p>No matter which method the user chooses to take, they will be held accountable to their habit by others which, in our minds, is what the other apps are missing.</p>
+
+        <p class="bold">App Flow</p>
+        <p>Below is a user flow of the app as we saw it from the ideation stage.</p>
+      </div>
+      <img src="img/21days/21daysflow.png" class="imgs">
+
+      <div class="content">
+
+        <p class="bold">Overall Brand</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>Gold is the colour of winners! We wanted a clean, minimal layout using goldenrod, black and white to keep users focused on their goals.</p>
+          </div>
+          <img src="img/21days/screens1.png" class="pull-right">
+        </div>
+
+        <p class="bold">Login Page</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>We didn’t want to make the signup process too cumbersome, so we elected to go with a simple social signup flow (which also connects the user’s Facebook account - two birds, one stone). You might think this would be a great place to start berating the user with questions about their goals and habits, and to that I say, shame on you! Since the best onboarding is no onboarding at all, we chose to let the landing page speak for itself...</p>
+          </div>
+          <img src="img/21days/login.png" class="pull-right">
+        </div>
+
+        <p class="bold">Landing Page</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>The landing page drops the user into the process of creating their first habit. They can create one from scratch or check out some that other users have already begun. If their Facebook friends are currently working on a habit, those will take precedence. Hey, it looks like our friend Jane Manning is flossing her teeth! We can join that habit and take on the goal of flossing with Jane at our side, if we like.</p>
+          </div>
+          <img src="img/21days/screens2.png" class="pull-right">
+        </div>
+
+        <p class="bold">Habit Creation</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>If the user wants to fly solo, or can’t find their habit in the search bar, they simply fill out the fields shown here. They select a task (something that they will track every day of the three weeks) that will build them towards creating their habit. Here, we want to write 100 words four times a week for the three weeks of our habit. We will receive a notification at 9:00PM every day, when the app will ask us if we have completed the task. Then, the app will post to Facebook with the results. Users without Facebook or Twitter can elect to use email, at which point they would enter the email address of the person to whom they are holding themselves accountable.
+          </div>
+          <img src="img/21days/screens3.png" class="pull-right">
+        </div>
+
+        <p class="bold">Habit Creation Confirmation</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>After the habit has been set, the user is shown the date (three weeks from today) in which they will have set their habit. It’s good to keep your eyes on the prize, so to speak. From here, the user can check out groups that may be related to their habit.</p>
+          </div>
+          <img src="img/21days/screens4.png" class="pull-right">
+        </div>
+
+        <p class="bold">Group</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>In this group, expert blogger Rita Lee can also keep us accountable. We can ask her questions and compare our success with others in the forum. The little graph icon in the top right corner will show us a dashboard of our progress as compared with others in the forum as well.</p>
+          </div>
+          <img src="img/21days/screens5.png" class="pull-right">
+        </div>
+
+        <p class="bold">Find a Group</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>The user can also search for other groups based on the habits they want to form.</p>
+          </div>
+          <img src="img/21days/screens6.png" class="pull-right">
+        </div>
+
+        <p class="bold">Dashboard</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>In the dashboard, the user can focus in on a specific goal. Here we are checking out how we are doing with that goal of writing 100 words per day. Looks like we’re a little behind Rita and the other active member of the group, Jeff.</p>
+          </div>
+          <img src="img/21days/screens7.png" class="pull-right">
+        </div>
+
+        <p class="bold">Log</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>The user can also track their progress in a calendar and log in the top right corner of the screen. Yellow days are days with tasks assigned to them, and we can see that we’re doing pretty well, only having missed two days so far. Not terrible!</p>
+          </div>
+          <img src="img/21days/screens8.png" class="pull-right">
+        </div>
+
+        <p class="bold">Record a Task</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>The user is notified by the app at their set time to record their task for the day. They can also do this at any time by tapping on the top left corner of the screen. We’ve written our 100 words for the day, so let’s make sure that gets accounted for.</p>
+          </div>
+          <img src="img/21days/screens9.png" class="pull-right">
+        </div>
+
+        <p class="bold">Task Confirmation</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>The confirmation page lets us know where we are in the process of forming a habit. </p>
+          </div>
+          <img src="img/21days/screens10.png" class="pull-right">
+        </div>
+
+        <br>
+          <p>Check out our working prototype in action below.</p>
+          <iframe width="438" height="930" src="https://invis.io/6K94WMICU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div><br><br><br>
+
+      <hr>
+      <table border="0" align="center" width="100%"><tr>
+        <td colspan="2">
+          <
+        </td>
+        <td></td>
+        <td align="left" width="50%"><a href="../revolution">
+          <div class="next">previous project</div>
+          U OF T'S REVOLUTION</a>
+        </td></a>
+        <td align="right" width="50%"><a href="../flora">
+          <div class="next">next project</div>
+          FLORA & FAUNA</a>
+        </td><td></td>
+        <td colspan="2">
+          >
+        </td>
+      </tr></table>
+      <hr>
+
+    </section>
+
+    <%- include('_footer-about'); %>
+    
+  </body>
+</html>
