@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <%- include('_head-blog'); %>
+  <body>
+    <%- include('_header-nav'); %>
+    <section class="blog-nav">
+    </section>
+
+    <section class="blog-post">
+      <%- include('_post-header', {
+        tag: 'design',
+        title: 'Unpleasant Design &<br> The Common Bench',
+        date: 'Wednesday, December 7, 2016',
+        img: 'camdenbench.jpg'
+      }); %>  
+      <%- include('_post-content'); %>
+    </section>
+    <%- include('_footer-about'); %>
+  </body>
+</html>

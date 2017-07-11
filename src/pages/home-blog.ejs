@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-blog'); %>
+
+  <body>
+    
+    <%- include('_header-nav'); %>
+
+    <section class="blog-nav">
+      
+    </section>
+
+    <section class="blog-home">
+
+      <%- include('_home-post', {
+        tag: 'design',
+        title: 'Unpleasant Design &<br> The Common Bench',
+        date: 'Wednesday, December 7, 2016',
+        blurb: 'hello world',
+        slug: 'bench',
+        img: 'camdenbench.jpg'
+      }); %>
+
+      <%- include('_home-post', {
+        tag: 'update',
+        title: 'Cuushe, Festival Posters &<br> Respectful Memes',
+        date: 'Monday, December 5, 2016',
+        blurb: 'Sweet wintery synth vibes from Cuushe to accompany the redesign of my blog, the insecurity of knowing all the bands on a festival poster, and an extra sprinkle of positivity on your Twitter feed\.',
+        slug: 'cuushe',
+        img: 'cuushe.png'
+      }); %>
+
+    </section>
+
+    <%- include('_footer-about'); %>
+
+  </body>
+
+</html>
