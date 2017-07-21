@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-content'); %>
+
+  <body>
+    
+    <%- include('_header-nav'); %>
+
+    <section class="work-content" id="top"><br>
+
+      <img src="img/checkin/splash.png" class="splash-image">
+
+      <div class="infopage">
+            
+        <div class="content" id="content"><p>
+
+        <div class="question bold"><span class="capital">Q: </span>How can we help planners keep track of their attendees during events?</div><br>
+
+        <div class="question bold"><span class="capital">A: </span>Check In</div><div class="description bold">a mobile app</div>Check In helps planners track their attendees and ensures that attendees gain entrance to events quickly. The app continues to be used at various events in Toronto and internationally.</p>
+        <p>The goal of the app is to provide planners with the tool to check in their attendees as quickly and efficiently as possible. The faster  an attendee is checked in to the event, the faster they can begin to engage and get what they want out of the experience.</p>
+
+        <p class="bold large" id="prob">Problem Definition</p>
+        <p>Imagine you’re attending an event, one you’ve been looking forward to for a while. You enter the conference hall or concert venue where the event is taking place, and note with dismay that there is a big line between you and the check-in desk.</p>
+
+        <img src="img/checkin/3684.png" class="imgs">
+
+        <p>Now imagine you’re the planner of that same event. You’re worried that your check-in staff can’t find people fast enough on their paper lists and attendees will become upset that they missed the first speaker while waiting in line. The speaker herself probably isn’t too pleased that her auditorium is only two-thirds full.</p>
+
+        <p class="bold">So what went wrong?</p>
+        <p>Events are high-stress for planners at every phase, but the onsite registration and opening of the event is probably one of the highest stress points of the event cycle. There are so many factors that can go wrong if not planned for like ensuring volunteers know what to do, that attendees arrive at the correct entrance and have the correct documentation to prove their admission, and that the speakers are properly primed and ready to shine.</p>
+
+        <p>No matter how long the planner schedules the time window for registration, she knows that most of the attendees will arrive in the final 10% of that window. This creates a bottleneck which can be tightened further by lack of resources of space and check-in kiosks, attendee confusion due to lack of proper signage and wayfinding, and most importantly, an inefficient system for the recording of check-ins. Say, like pen and paper lists, which are the current industry norm.</p>
+
+        <p>I had my work cut out for me, so I conducted a two-day spike to research competitors and get a better understanding of the problem space.</p>
+
+        <p class="bold large" id="competitors">Competitors</p>
+        <p>Overall I was seeing a lot of patterns of simple check-in lists, but it became clear that the interaction of checking someone in was a large part of the experience, and many apps missed the mark. Dragging is simply too much, but tapping can be equally different if the target is too small. If the target is too big, staff may accidentally check someone in, and if the list is filtered to only show pending people, that mistake could disappear before it could be corrected.</p>
+
+        <p class="bold">EventFarm</p>
+        <p>Attendees who have arrived are labelled as "Who's Here", which reduces cognitive load. This is a good example of a very simple use case because the view is not customizable, but it's quite simple and contains most of the functionality I would need except badge scanning.</p>
+        <img src="img/checkin/eventfarm.png" class="imgs">
+
+        <p class="bold">EventBrite</p>
+        <p>EventBrite gives users the ability to sell tickets onsite as well as check in attendees, but their drag functionality (swipe right to check someone in) is a bit clumsy and hard to discover. When planners are trying to check people in as fast as possible, they're going to be annoyed with a swipe when a tap can do the same job. On the plus side, their analytics section is logical and concise.</p>
+        <img src="img/checkin/eventbrite.png" class="imgs">
+
+        <p class="bold">Boomset</p>
+        <p>Boomset includes a status bar at the top of the screen to remind planners how the event is going, and it's nicely out of the way. Unfortunately there is a lot going on all over the screen, and the primary green colour is used a bit too much to really direct the user to the true primary action (checking someone in). This displayed the importance of reducing friction between the user and the task they want to complete; making things as obvious as possible.</p>
+        <img src="img/checkin/boomset.png" class="imgs">
+
+        <p class="bold">Cvent</p>
+        <p>As a behemoth in the evens industry, Cvent's app boasts a clean and uncluttered interface, perfect for planners who have a million things on their mind. That said, it takes two taps to check someone in. This is probably a measure to correct accidental taps, but I think the interface design itself can solve this problem rather than costing the planner extra time. Also, I feel that the missing comma between "Last Name, First Name" is really confusing. Simplicity shouldn't be won at the cost of good grammar.</p>
+        <img src="img/checkin/cvent.png" class="imgs">
+
+        <p class="bold">Zkipster</p>
+        <p>Zkipster, with a very interesting product name, showcases some equally interesting features. It contains a separate area in the app for VIP attendees - which got me thinking about handling notifications for preferred guest arrival. The app also treats the attendee list unlike any other product; using a table component. Everything is sortable by tapping the top bar, rather than accessing these features through a menu as others have done. That said, it's important to note that this feature may be a sort of "set it and forget it", meaning the user may not need it more than once.</p>
+        <img src="img/checkin/zkipster.png" class="imgs">
+
+        <p>It was interesting to note that Eventbrite replaced their specific check-in product with an on-site platform app that contains many event-day features including check-in. They retained a specific focus on clear and live-updating analytics, which I noted not to miss in my design.</p>
+
+        <p>There was also the concept of how to handle VIP guests, perhaps even setting notifications for planner to receive when a specific subset of attendees arrives. Elsewise, how much of an attendee’s personal information should be put in the hands of volunteer check-in staff, should there perhaps be a volunteer “lite mode”? The list went on:</p>
+
+        <ul>
+          <li>
+            Types of attendees like VIPs, exhibitors, performers
+          </li>
+          <li>
+            How to organize and display attendees in the main list
+          </li>
+          <li>
+            What analytics to put in for the best on-the-go use in the moment
+          </li>
+          <li>
+            How to filter down results for only one volunteer’s line/entrance
+          </li>
+          <li>
+            Attendee Self Check-in
+          </li>
+        </ul>
+
+        <p class="bold large" id="sketches">Sketches</p>
+        <img src="img/checkin/check1.jpg" class="imgs">
+        <img src="img/checkin/check3.jpg" class="imgs">
+
+        <p>I tested my prototype with various event planners to ensure that it was simple enough to pick up quickly, but also contained all the features the planners needed. There was little to no trouble completing the tasks during the testing, which gave me the validation I needed to put the design into the hands of planners at real events.</p>
+
+        <img src="img/checkin/testing.png" class="imgs">
+
+        <p>I was fortunate enough to be able to test the app at <a href="https://www.techtoronto.org/">TechTO</a>, a monthly Toronto-based tech meetup. So many people arrived so quickly that the app was truly feeling the strain of use. Four check-in staff (including myself) were all using the app at once, which is how we found that the attendee list wasn’t updating across devices without a forced page refresh. Not a huge pain for one event, but this would still need to be fixed.</p>
+
+        <p>Once we had ironed out the bugs from TechTO, I was soon given another opportunity, this time at TEDx Toronto. I was so excited to try out the check in at a much larger event with over 1500 attendees. The planner was extremely impressed with the app, especially considering she had used pen and paper the year before. All of the attendees found their seats on time and no one missed the first speaker. I’d call that a success.</p>
+
+        <p class="bold large" id="screens">Screens</p>
+        <p class="bold">Login Page</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>Planners often enlist volunteers to help them with checking attendees in, and these people do not usually have their own logins. The planner needs to be able to track each volunteer's action, so the volunteer simply signs in with their name and a six-digit passcode the planner provides for them (generated with the help of EventMobi).</p>
+          </div>
+          <img src="img/checkin/2 Login Email.png" class="pull-right">
+        </div>
+
+        <p class="bold">Events Page</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>A planner may have multiple events coming up, or even concurrent events at once, so the list is organized to display the most relevant event first. Tap any event to see the attendee list, or review the quick overview stats on the card.</p>
+          </div>
+          <img src="img/checkin/3 events.png" class="pull-right">
+        </div>
+
+        <p class="bold">Attendee List</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>The attendee list is sorted by last name but can be customized however the planner chooses. They can scroll the list using the alphabet along the right side or search for a name, tap once on the circle to check them in, and they're off to the races.</p>
+          </div>
+          <img src="img/checkin/4 all.png" class="pull-right">
+        </div>
+
+        <p class="bold">View Mode: Pending</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>A planner will usually want to remain in the view of only seeing pending attendees, so that they can more easily find attendees in a list that shrinks as more people arrive.</p>
+          </div>
+          <img src="img/checkin/6 pending.png" class="pull-right">
+        </div>
+
+        <p class="bold">Search</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>As mentioned above, planners may want to search for an attendee instead of scrolling through the list. They can also search by company, title, ticket, and any other parameters. The search can remain active while they check people in, and so provides one more level of customization.</p>
+          </div>
+          <img src="img/checkin/7 search.png" class="pull-right">
+        </div>
+
+        <p class="bold">Attendee Profile</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>Tapping on an attendee in the list will also reveal some details about them and their ticket. For example, if they purchased a shirt with their ticket, planners would be able to see that information here and ensure the attendee gets what they purchased.</p>
+          </div>
+          <img src="img/checkin/10 profile.png" class="pull-right">
+        </div>
+
+        <p class="bold">Analytics Dashboard</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>In the dashboard, the planner can see a brief overview of the status of their event. They can filter the view by time to review the past 15 minutes, hour, four hours, or full day. More analytics are available in the planner's content management system, but this screen is more geared towards quick views to ensure everything is running smoothly. If a volunteer is checking in many more people than others, perhaps they need some help and the planner can send someone to assist them.</p>
+          </div>
+          <img src="img/checkin/11 dash.png" class="pull-right">
+        </div>
+
+        <p class="bold">Badge/Ticket Scanning</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>If the planner has opted to use barcoded tickets or badges, they can simply scan the barcode into the app to check attendees in. As each barcode is scanned, the associated name will appear at the bottom of the screen in case the planner needs more details about the attendee.</p>
+          </div>
+          <img src="img/checkin/15 scan2.png" class="pull-right">
+        </div>
+
+        <p class="bold">VIP View</p>
+        <div class="clearfix">
+          <div class="pull-left">
+            <p>Depending on the event type, the planner may want to turn on the VIP view, which will filter the attendee list down to only guests who have been specially selected ahead of time. This use case involves the planner ensuring these VIPs are treated specially and to more easily keep track of them during the event.</p>
+          </div>
+          <img src="img/checkin/16 VIP.png" class="pull-right">
+        </div>
+
+        <p class="bold large" id="logo">Logo Design</p>
+        <p>As a fun brain exercise, I gave myself a set amount of time in which to come up with as many ideas as possible for the logo. I recorded my progress for most of the work, sped it up and reviewed it as a creative way to critique my own work and continue the ideation cycle. Check it out below:</p>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/NeN_fNUQ_po?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+        <p class="bold large" id="final">Final Product</p>
+        <p>Check out the working prototype in action below.</p>
+        <center><iframe width="438" height="930" src="https://invis.io/RVCOK82W5" frameborder="0" allowfullscreen></iframe></center>
+
+        <p>I had the joy of writing about the importance of testing designs with real users in real scenarios on Medium, which you can find below. Some of my coworkers mentioned how helpful the article was for them; helping them to get the most out of opportunities to attend events to better understand our users.</p>
+
+        <center><a href="https://medium.com/eventmobi/designer-as-user-testing-in-the-wild-b2b4e849bb54" target="blank" class="more bold">MEDIUM ARTICLE</a></center>
+        </div>
+
+      </div><br><br><br>
+
+      <hr>
+      <table border="0" align="center" width="100%"><tr>
+        <td colspan="2">
+          <
+        </td>
+        <td></td>
+        <td align="left" width="50%"><a href="../revolution">
+          <div class="next">previous project</div>
+          U OF T'S REVOLUTION</a>
+        </td></a>
+        <td align="right" width="50%"><a href="../flora">
+          <div class="next">next project</div>
+          FLORA & FAUNA</a>
+        </td><td></td>
+        <td colspan="2">
+          >
+        </td>
+      </tr></table>
+      <hr>
+
+    </section>
+
+    <%- include('_footer-about'); %>
+    
+  </body>
+</html>

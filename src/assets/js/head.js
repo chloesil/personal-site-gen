@@ -1,19 +1,43 @@
 $(function(){ 
-    var scrollToTop = $(document).scrollTop();
-    var header = $('.navigation').outerHeight();
+  var scrollToTop = $(document).scrollTop();
+  var header = $('.navigation').outerHeight();
 
-    $(window).scroll(function() {
-        var windowScroll = $(document).scrollTop();
+  $(window).scroll(function() {
+      var windowScroll = $(document).scrollTop();
 
-        if (windowScroll > header){$('.navigation').addClass('navigation-hide');} 
-        else {$('.navigation').removeClass('navigation-hide');}
+    if (windowScroll > header) {
+      $('.navigation').addClass('navigation-hide');
+    } 
+    else {
+      $('.navigation').removeClass('navigation-hide');
+    }
 
-        if (windowScroll > scrollToTop){$('.navigation').removeClass('navigation-show');} 
-        else {$('.navigation').addClass('navigation-show');}        
+    if (windowScroll > scrollToTop) {
+      $('.navigation').removeClass('navigation-show');
+    } 
+    else {
+      $('.navigation').addClass('navigation-show');
+    }        
 
-        scrollToTop = $(document).scrollTop();  
-     });
+    scrollToTop = $(document).scrollTop();  
+   });
 });
+
+
+  // Hide and show nav on mobile
+  $('.js-nav-toggle').click(function() {
+    $('.js-nav').slideDown(300);
+  });
+
+  $('.js-nav').click(function() {
+    $('.js-nav').slideUp(300);
+  });
+
+  $('.nav-item').click(function() {
+    $('.js-nav').slideUp(300);
+  });
+
+
 $(document).ready(function() {
 
   // Find first paragraph and isolate

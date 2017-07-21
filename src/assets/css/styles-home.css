@@ -1,10 +1,11 @@
 /* Overall CSS
 -----------------------------------------------*/
 body {
-	font-family: 'nexa_lightregular', serif;
+  font-family: 'Vollkorn', serif;
   font-weight: 400;
-	color: #424945;
+  color: #424945;
   font-size: 16px;
+  margin: 0;
 }
 
 section {
@@ -16,15 +17,15 @@ section {
 /* Nav
 -----------------------------------------------*/
 nav {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 nav a {
-	text-decoration: none;
-  font-family: 'nexa_boldregular', sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-	color: #424945;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #424945;
   -o-transition: color .2s ease-out, background .2s ease-out;
   -ms-transition: color .2s ease-out, background .2s ease-out;
   -moz-transition: color .2s ease-out, background .2s ease-out;
@@ -33,31 +34,23 @@ nav a {
   transition: color .2s ease-out, background .2s ease-out;
 }
 
-.space {
-	margin-left: 20px;
-}
-
-.icon-space {
-  margin-left: 10px;
-}
-
-.insta-space {
-  margin-left: 30px;
-}
-
 .name {
-	font-size: 18px;
-	font-weight: 700;
-	color: #424945;
-  font-family: 'nexa_boldregular', sans-serif;
-  font-weight: 900;
+  font-size: 18px;
+  color: #424945;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 nav .title {
-	font-size: 13px;
+  font-size: 13px;
   letter-spacing: 0.05em;
   margin-top: 10px;
-  font-family: 'nexa_lightregular', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.space {
+  margin-left: 20px;
 }
 
 .navigation {
@@ -73,11 +66,11 @@ nav .title {
 }
 
 .navigation-hide {
-  top: -90px;
+  top: -150px;
 }
 .navigation-show {
   top: 0;
-	z-index: 9999;
+  z-index: 9999;
 }
 
 .monobg {
@@ -87,141 +80,199 @@ nav .title {
 .mono {
   width: 45px;
 }
-
-.icons {
-  width: 20px;
-  margin-bottom: -4px;
-}
   
 .right {
   padding-right: 8px;
 }
 
-.blue .title {
-  color: #1995DB;
+.title {
+  color: #6182b2;
 }
 
-.blue .monobg {
-  background: #1995DB;
+.monobg {
+  background: #6182b2;
 }
 
-.blue .more:hover {  
-  background: #1995DB; 
-  border-color: #1995DB;
+.more:hover {  
+  background: #6182b2; 
+  border-color: #6182b2;
   color: white;
 }
 
-.blue a.link:hover {
-  color:#1995DB;
+a.link:hover {
+  color:#6182b2;
 }
 
-.blue nav a:hover {
-  color: #1995DB;
+nav a:hover {
+  color: #6182b2;
 }
 
-.blue .content a {
-  color:#1995DB;
+.content a {
+  color:#6182b2;
 }
 
-.blue .contact a {
-  color:#1995DB;
+.contact a {
+  color:#6182b2;
 }
 
-.blue .work-btn:hover {  
-  background:#1995DB; 
-  border-color: #1995DB;
-}
-
-.red .title {
-    color: #CE7A0B;
-}
-
-.red .monobg {
-  background:#CE7A0B; 
-}
-
-.red .more:hover {  
-  background:#CE7A0B; 
-  border-color: #CE7A0B;
-  color:white;
-}
-
-.red a.link:hover {
-  color:#CE7A0B;
-}
-
-.red nav a:hover {
-  color: #CE7A0B;
-}
-
-.red .content a {
-  color:#CE7A0B;
-}
-
-.red .contact a {
-  color:#CE7A0B;
-}
-
-.red .work-btn:hover {  
-  background:#CE7A0B; 
-  border-color:#CE7A0B;
-}
-
-.green .title {
-    color: #45936E;
-}
-
-.green .monobg {
-    background: #45936E;
-}
-
-.green .more:hover {  
-  background:#45936E;
-  border-color: #45936E;
-  color:white;
-}
-
-.green a.link:hover {
-  color:#45936E;
-}
-
-.green nav a:hover {
-  color: #45936E;
-}
-
-.green .content a {
-  color:#45936E;
-}
-
-.green .contact a {
-  color:#45936E;
-}
-.green .work-btn:hover {  
-  background:#45936E;
-  border-color:#45936E;
+.work-btn:hover {  
+  background:#6182b2; 
+  border-color: #6182b2;
 }
 
 /* Carousel
 -----------------------------------------------*/
 .carousel {
-	margin-top: 8%;
+  margin-top: 8%;
 }
 
 .slick-prev {
-	left: 10px;
-	width: 50px;
-	height: 50px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .slick-next {
-	right: 10px;
-	width: 50px;
-	height: 50px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .caroclass {
-	width:100%;
-	height:inherit;
+  width:100%;
+  height:inherit;
+}
+
+/* Work
+-----------------------------------------------*/
+
+.friendcanoe {
+  background: #effbfb; /* Old browsers */
+  background: -moz-linear-gradient(top, #effbfb 0%, #ccf9f9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #effbfb 0%,#ccf9f9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #effbfb 0%,#ccf9f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#effbfb', endColorstr='#ccf9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.inuit {
+  background-image: url('../img/inuitart/background.png');
+  background-size: cover;
+  color: white;
+}
+
+.fgsp {
+  background-image: url('../img/fgs/background.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.archive {
+  background-image: url('../img/archive.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.checkin {
+  background-image: url('../img/checkin/background.png');
+  background-size: cover;
+  color: white;
+}
+
+.days21 {
+  background: #f9bc10; /* Old browsers */
+  background: -moz-linear-gradient(top, #f9bc10 1%, #f7db8f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f9bc10 1%,#f7db8f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f9bc10 1%,#f7db8f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9bc10', endColorstr='#f7db8f',GradientType=0 ); /* IE6-9 */
+}
+
+.me {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 13%, #6182b2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 13%,#6182b2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 13%,#6182b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6182b2',GradientType=0 ); /* IE6-9 */
+}
+
+.piece {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  width: 100%;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.phone {
+  float: left;
+  padding-left: 100px;
+  vertical-align: center;
+  margin-right: 100px;
+  height: 80vh;
+}
+
+.faces {
+  height: 400px;
+}
+
+.phone-mobile {
+  width: 80vw;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.piece-description {
+  float: left;
+  height: 100vh;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 5em;
+  padding-bottom: 20px;
+}
+
+.blurb {
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #6182b2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  -o-transition:color .2s ease-out, background .2s ease-out;
+  -ms-transition:color .2s ease-out, background .2s ease-out;
+  -moz-transition:color .2s ease-out, background .2s ease-out;
+  -webkit-transition:color .2s ease-out, background .2s ease-out;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background .2s ease-out;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;    
+    clear: both !important;
 }
 
 /* Work
@@ -276,7 +327,7 @@ nav .title {
 .work-btn { 
   padding: 10px 20px 10px 20px;
   width: 70px;
-  font-family: 'nexa_boldregular';
+  font-family: 'Montserrat', sans-serif;
   border-style: solid;
   border-radius: 5px;
   margin-right: auto;
@@ -359,38 +410,56 @@ nav .title {
 -----------------------------------------------*/
 
 .contact {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-  margin-top: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
-.contact .title {
+.pic {
+  width: 30%;
+  float: left;
+  padding-right: 30px;
+}
+
+.bio {
+  width: 40%;
+  float: left;
+  padding-right: 30px;
+}
+
+.social {
+  width: 20%;
+  padding-right: 0;
+  float: right;
+}
+
+.icon {
+  width: 20px;
+  margin-bottom: -4px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact li {
+  padding-bottom: 5px;
+}
+
+.title {
+  margin-top: 0;
   font-size: 20px;
-  font-family: 'nexa_boldregular', sans-serif;
-  font-weight: 700;
-}
-
-.table-desktop .wide {
-  width: 35%;
-}
-
-.about {
-  width: 65%;
-  padding-left: 20px;
-}
-
-.table-mobile #contact {
-  padding-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .face {
   width: 100%;
 }
-
-
-/* Footer
------------------------------------------------*/
 
 footer p {
   margin-top: 20px;
@@ -404,8 +473,17 @@ footer p {
 @media only screen and (min-width: 1030px) {
   /* monitors */
 
+  /*Pieces*/
+  .phone-mobile {
+    display: none;
+  }
+
+  .piece-description {
+    width: 40%;
+  }
+
   .nav-mobile {
-  	display: none;
+    display: none;
   }
 
   .table-mobile {
@@ -437,12 +515,17 @@ footer p {
 @media only screen and (min-width: 768px) and (max-width: 1029px) {
   /* monitors */
 
-  .nav-mobile {
-  	display: none;
+  /*Pieces*/
+  .phone-mobile {
+    display: none;
   }
 
-  .icon-space {
-  	display: none;
+  .piece-description {
+    width: 40%;
+  }
+
+  .nav-mobile {
+    display: none;
   }
 
   .work-container {
@@ -507,6 +590,47 @@ footer p {
   .carousel {
     margin-top: -40px;
   }
+
+  /*Pieces*/
+  .phone {
+    display: none;
+  }
+
+  .piece {
+    padding-top: 50px;
+  }
+
+  .project-title {
+    font-size: 3.5em;
+  }
+
+  .blurb {
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .piece-description {
+    text-align: center;
+    padding-left: 0;
+    float: none;
+  }
+
+
+  /*Footer*/
+  .pic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bio { 
+    width: 60%;
+  }
+
+  .social {
+    width: 27%;
+    padding-left: 10px;
+  }
 }
 
 
@@ -555,5 +679,45 @@ footer p {
 
   .splash {
     margin-top: 30px;
+  }
+
+  /*Pieces*/
+  .phone {
+    display: none;
+  }
+
+  .piece {
+    padding-top: 50px;
+  }
+
+  .project-title {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .blurb {
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .piece-description {
+    text-align: center;
+    padding-left: 0;
+    float: none;
+  }
+
+  /*Footer*/
+  .pic {
+    width: 100%;
+  }
+
+  .bio { 
+    width: 60%;
+  }
+
+  .social {
+    width: 35%;
+    padding-left: 20px;
   }
 }
