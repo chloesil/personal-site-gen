@@ -220,6 +220,10 @@ nav a:hover {
   margin-top: 20px;
 }
 
+.phone-mobile.faces {
+  width: inherit;
+}
+
 .logo {
   width: 200px;
 }
@@ -405,6 +409,10 @@ nav a:hover {
   background: url(../img/th/inuitart.png);
   background-size: 100% 100%;
 }
+
+  .prevnext {
+    font-weight: 200;
+  }
 
 /* Contact
 -----------------------------------------------*/
@@ -598,6 +606,7 @@ footer p {
 
   .piece {
     padding-top: 50px;
+    height: 120vh;
   }
 
   .project-title {
@@ -618,18 +627,10 @@ footer p {
 
 
   /*Footer*/
-  .pic {
+  .pic,
+  .bio,
+  .social { 
     width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .bio { 
-    width: 60%;
-  }
-
-  .social {
-    width: 27%;
-    padding-left: 10px;
   }
 }
 
@@ -688,6 +689,7 @@ footer p {
 
   .piece {
     padding-top: 50px;
+    height: 120vh;
   }
 
   .project-title {
@@ -708,16 +710,9 @@ footer p {
   }
 
   /*Footer*/
-  .pic {
+  .pic,
+  .bio,
+  .social { 
     width: 100%;
-  }
-
-  .bio { 
-    width: 60%;
-  }
-
-  .social {
-    width: 35%;
-    padding-left: 20px;
   }
 }

@@ -24,20 +24,6 @@ $(function(){
 });
 
 
-  // Hide and show nav on mobile
-  $('.js-nav-toggle').click(function() {
-    $('.js-nav').slideDown(300);
-  });
-
-  $('.js-nav').click(function() {
-    $('.js-nav').slideUp(300);
-  });
-
-  $('.nav-item').click(function() {
-    $('.js-nav').slideUp(300);
-  });
-
-
 $(document).ready(function() {
 
   // Find first paragraph and isolate
@@ -50,6 +36,21 @@ $(document).ready(function() {
   var id = dropCap.id;
   $('#' + id).hide();
   // $(dropCap).html("<span class='dropcap'" + dropCap +"/span>");
+
+
+  // Hide and show nav on mobile
+  $('.js-nav-toggle').click(function() {
+    console.log('hello');
+    $('.js-nav').slideDown(300);
+  });
+
+  $('.js-nav').click(function() {
+    $('.js-nav').slideUp(300);
+  });
+
+  $('.nav-item').click(function() {
+    $('.js-nav').slideUp(300);
+  });
 
 });
 
