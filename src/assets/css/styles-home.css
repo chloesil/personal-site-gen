@@ -251,14 +251,14 @@ nav a:hover {
 .project-title {
   font-weight: 600;
   font-size: 5em;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .blurb {
   font-weight: 400;
   font-size: 2em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .btn {
@@ -269,6 +269,7 @@ nav a:hover {
   margin-top: 10px;
   background-color: #5476A6;
   border: none;
+  text-decoration: none;
   border-radius: 5px;
   color: white;
   -o-transition:color .2s ease-out, background .2s ease-out;
