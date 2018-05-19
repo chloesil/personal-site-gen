@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+  <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
   <%- include('_head-content'); %>
 
@@ -17,25 +17,27 @@
 
         <div class="question bold"><span class="capital">Q: </span>How can we help planners keep track of their attendees during events?</div><br>
 
-        <div class="question bold"><span class="capital">A: </span>Check In</div><div class="description bold">a mobile app</div>Check In helps planners track their attendees and ensures that attendees gain entrance to events quickly. The app continues to be used at various events in Toronto and internationally.</p>
-        <p>The goal of the app is to provide planners with the tool to check in their attendees as quickly and efficiently as possible. The faster  an attendee is checked in to the event, the faster they can begin to engage and get what they want out of the experience.</p>
+        <div class="question bold"><span class="capital">A: </span>Check In</div><div class="description bold">a mobile app</div>Check In helps planners track their attendees and ensures that attendees gain quick and easy entrance to events.</p>
+        <p>The goal of the app is to provide planners with the tool to check in their attendees as quickly and efficiently as possible. The faster an attendee checks in to the event, the faster they can begin to engage and get what they want out of the experience.</p>
+
+        <p>The app is currently being used at various events in Toronto and internationally.</p>
 
         <p class="bold large" id="prob">Problem Definition</p>
         <p>Imagine you’re attending an event, one you’ve been looking forward to for a while. You enter the conference hall or concert venue where the event is taking place, and note with dismay that there is a big line between you and the check-in desk.</p>
 
         <img src="img/checkin/3684.png" class="imgs">
 
-        <p>Now imagine you’re the planner of that same event. You’re worried that your check-in staff can’t find people fast enough on their paper lists and attendees will become upset that they missed the first speaker while waiting in line. The speaker herself probably isn’t too pleased that her auditorium is only two-thirds full.</p>
+        <p>Now imagine you’re the planner of that same event. You’re worried that your check-in staff can’t find people fast enough on their paper lists and attendees will become upset that they missed the first speaker while waiting in line. The speaker herself isn’t too pleased that her auditorium is only two-thirds full.</p>
 
-        <p class="bold">So what went wrong?</p>
-        <p>Events are high-stress for planners at every phase, but the onsite registration and opening of the event is probably one of the highest stress points of the event cycle. There are so many factors that can go wrong if not planned for like ensuring volunteers know what to do, that attendees arrive at the correct entrance and have the correct documentation to prove their admission, and that the speakers are properly primed and ready to shine.</p>
+        <p class="bold">So what went wrong?</p> 
+        <p>Events are high-stress for planners at every phase, but the onsite registration and opening of the event is one of the highest stress points of the event cycle. So many things can easily go wrong like ensuring volunteers know what to do, that attendees arrive at the correct entrance and have the correct documentation to prove their admission, and that the speakers are primed and ready to shine.</p>
 
         <p>No matter how long the planner schedules the time window for registration, she knows that most of the attendees will arrive in the final 10% of that window. This creates a bottleneck which can be tightened further by lack of resources of space and check-in kiosks, attendee confusion due to lack of proper signage and wayfinding, and most importantly, an inefficient system for the recording of check-ins. Say, like pen and paper lists, which are the current industry norm.</p>
 
         <p>I had my work cut out for me, so I conducted a two-day spike to research competitors and get a better understanding of the problem space.</p>
 
         <p class="bold large" id="competitors">Competitors</p>
-        <p>Overall I was seeing a lot of patterns of simple check-in lists, but it became clear that the interaction of checking someone in was a large part of the experience, and many apps missed the mark. Dragging is simply too much, but tapping can be equally different if the target is too small. If the target is too big, staff may accidentally check someone in, and if the list is filtered to only show pending people, that mistake could disappear before it could be corrected.</p>
+        <p>I was seeing a lot of patterns of simple check-in lists, but it became clear that the interaction of checking someone in was a large part of the experience, and many apps missed the mark. Dragging is simply too much, but tapping can be equally different if the target is too small. If the target is too big, staff may accidentally check someone in, and if the list is filtered to only show pending people, that mistake could disappear before it could be corrected.</p>
 
         <p class="bold">EventFarm</p>
         <p>Attendees who have arrived are labelled as "Who's Here", which reduces cognitive load. This is a good example of a very simple use case because the view is not customizable, but it's quite simple and contains most of the functionality I would need except badge scanning.</p>
@@ -86,6 +88,7 @@
         <p>I tested my prototype with various event planners to ensure that it was simple enough to pick up quickly, but also contained all the features the planners needed. There was little to no trouble completing the tasks during the testing, which gave me the validation I needed to put the design into the hands of planners at real events.</p>
 
         <img src="img/checkin/testing.png" class="imgs">
+        <p>I used a modified version of the <a href="https://www.smashingmagazine.com/2013/04/rainbow-spreadsheet-collaborative-ux-research-tool/">rainbow spreadsheet</a> for my usability testing.</p>
 
         <p>I was fortunate enough to be able to test the app at <a href="https://www.techtoronto.org/">TechTO</a>, a monthly Toronto-based tech meetup. So many people arrived so quickly that the app was truly feeling the strain of use. Four check-in staff (including myself) were all using the app at once, which is how we found that the attendee list wasn’t updating across devices without a forced page refresh. Not a huge pain for one event, but this would still need to be fixed.</p>
 

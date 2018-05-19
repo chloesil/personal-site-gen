@@ -14,6 +14,21 @@ section {
   margin-right: auto;
 }
 
+ .offset a {
+  position: absolute;
+  left: -1000em;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #5476A6;
+  z-index: 1000;
+  color: white;
+ }
+ .offset a:focus, .offset a:active {
+  position: absolute;
+  top: 6em;
+  left: 5em;
+ }
+
 /* Nav
 -----------------------------------------------*/
 nav {
@@ -46,7 +61,7 @@ nav .title {
   letter-spacing: 0.05em;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .space {
@@ -86,38 +101,38 @@ nav .title {
 }
 
 .title {
-  color: #6182b2;
+  color: #5476A6;
 }
 
 .monobg {
-  background: #6182b2;
+  background: #5476A6;
 }
 
 .more:hover {  
-  background: #6182b2; 
-  border-color: #6182b2;
+  background: #5476A6; 
+  border-color: #5476A6;
   color: white;
 }
 
 a.link:hover {
-  color:#6182b2;
+  color:#5476A6;
 }
 
 nav a:hover {
-  color: #6182b2;
+  color: #5476A6;
 }
 
 .content a {
-  color:#6182b2;
+  color:#5476A6;
 }
 
 .contact a {
-  color:#6182b2;
+  color:#5476A6;
 }
 
 .work-btn:hover {  
-  background:#6182b2; 
-  border-color: #6182b2;
+  background:#5476A6; 
+  border-color: #5476A6;
 }
 
 /* Carousel
@@ -188,10 +203,10 @@ nav a:hover {
 
 .me {
   background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 13%, #6182b2 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 13%,#6182b2 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 13%,#6182b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6182b2',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, #ffffff 13%, #5476A6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 13%,#5476A6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 13%,#5476A6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#5476A6',GradientType=0 ); /* IE6-9 */
 }
 
 .piece {
@@ -252,7 +267,7 @@ nav a:hover {
   font-size: 1.2em;
   padding: 10px 15px;
   margin-top: 10px;
-  background-color: #6182b2;
+  background-color: #5476A6;
   border: none;
   border-radius: 5px;
   color: white;
