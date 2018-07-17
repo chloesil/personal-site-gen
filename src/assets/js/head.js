@@ -1,4 +1,6 @@
 $(function(){ 
+
+    $('.project-nav').hide();
   var scrollToTop = $(document).scrollTop();
   var header = $('.navigation').outerHeight();
 
@@ -20,6 +22,19 @@ $(function(){
     }        
 
     scrollToTop = $(document).scrollTop();  
+
+    // Hide the project nav when the bottom of the page is reached
+    var docHeight = $(document).height() - 1200;
+
+    if (windowScroll > docHeight) {
+      $('.project-nav').fadeOut();
+    } 
+    else if (windowScroll < 600) {
+      $('.project-nav').fadeOut();
+    } 
+    else {
+      $('.project-nav').fadeIn();
+    }
    });
 });
 
@@ -40,7 +55,6 @@ $(document).ready(function() {
 
   // Hide and show nav on mobile
   $('.js-nav-toggle').click(function() {
-    console.log('hello');
     $('.js-nav').slideDown(300);
   });
 

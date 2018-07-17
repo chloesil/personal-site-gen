@@ -1,0 +1,24 @@
+// VENDOR
+@import
+   "settings",
+   "foundation/foundation";
+
+@include foundation-grid;
+@include foundation-visibility-classes;
+
+@import 'variables';
+
+// FONT
+@import 'fonts';
+
+// BASE STYLES
+@import 'partials/globals';
+
+//STYLES
+@import 'partials/header';
+@import 'partials/natural-language';
+@import 'partials/buttons';
+@import 'partials/content-block';
+@import 'partials/video-modal';
+@import 'partials/footer';
+@import 'vendor/selectwoo';

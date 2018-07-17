@@ -187,6 +187,12 @@ nav a:hover {
   color: white;
 }
 
+.mantle {
+  background-image: url('../img/mantle/background.png');
+  background-size: cover;
+  color: white;
+}
+
 .checkin {
   background-image: url('../img/checkin/background.png');
   background-size: cover;
