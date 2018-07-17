@@ -1,0 +1,52 @@
+.button a,
+button.button{
+	border-radius: 100px;
+	background: $yellow;
+	color: $dark-grey;
+	display: block;
+	padding: 0 25px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none !important;
+	font-family: $font_bold;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	transition: $transition;
+	&:after{
+		font-family: "Font Awesome 5 Free";
+		content: "\f061";
+		font-weight: 900;
+		display: inline-block;
+		margin-left: 5px;
+		transition: $transition;
+		position: relative;
+		left: 1px;
+	}
+	&:hover,
+	&:focus{
+		color: $dark-grey;
+		background-color: $yellow_hover;
+		&:after{
+			left: 4px;
+		}
+	}
+}
+
+.button.text{
+	a{
+		background: none !important;
+		padding: 0;
+		&:hover,
+		&:focus{
+		}
+	}
+}
+
+p.button{
+	display: inline-block;
+}
+
+button, input[type=submit]{
+	cursor: pointer;
+}

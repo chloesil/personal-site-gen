@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Visuelt-Bold;
+    src: url('../fonts/Visuelt Bold.ttf') format('truetype');
+    //font-display loading strategy: on EXTREMELY SLOW connections, arial will be used.
+    font-display: fallback;
+}
+@font-face {
+    font-family: Visuelt-Light-Italic;
+    src: url('../fonts/Visuelt Light Italic.ttf') format('truetype');
+    //font-display loading strategy: on EXTREMELY SLOW connections, arial will be used.
+    font-display: fallback;
+}
+@font-face {
+    font-family: Visuelt-Medium;
+    src: url('../fonts/Visuelt Medium.ttf') format('truetype');
+    //font-display loading strategy: on EXTREMELY SLOW connections, arial will be used.
+    font-display: fallback;
+}
+@font-face {
+    font-family: Visuelt;
+    src: url('../fonts/Visuelt.ttf') format('truetype');
+    //font-display loading strategy: on EXTREMELY SLOW connections, arial will be used.
+    font-display: fallback;
+}
+
+$font: Visuelt, Arial, Helvetica, sans-serif;
+$font_bold: Visuelt-Bold, Arial, Helvetica, sans-serif;
+
+body {
+    font-family: $font;
+    color: $dark-grey;
+}
+
+h1, h2, h3, h4, h5{
+	margin: 0 0 1em;
+	line-height: 1.35;
+}
+h1 {
+    font-size: 4.8rem;
+    color: $black;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size:2rem;
+}
+
+p, label, li {
+	font-size: 1.6rem;
+	font-family: $font;
+	color: $dark-grey;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 2rem;
+	padding: 0;
+}
+
+
+
+

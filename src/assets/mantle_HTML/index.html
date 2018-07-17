@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html  lang="en" xml:lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='dist/css/styles.css' type='text/css' media='all' />
+
+  <!-- This font loading strategy starts the font loading immediately so it is never render-blocking -->
+  <link rel="preload" href="dist/fonts/Visuelt Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="dist/fonts/Visuelt Light Italic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="dist/fonts/Visuelt Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="dist/fonts/Visuelt.ttf" as="font" type="font/ttf" crossorigin>
+  <!-- Icons from fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script>
+	window.FontAwesomeConfig = {
+		//searchPseudoElements: true
+	}
+	</script> -->
+  <title>Mantle Homepage</title>
+</head>
+<body>
+<a tabindex="0" class="skip-to-content show-for-sr" href="#page-content">Skip to main content</a>
+<div id="container">
+
+
+	<header class="site-header" role="banner">
+	   <div class="row">
+			<div class="columns">
+				<div class="logo">
+					<a href="/">
+						<img src="dist/img/mantle-logo.svg" alt="" />
+						<span class="show-for-sr">Mantle.com</span>
+					</a>
+				</div>
+				<nav aria-label="primary" class="header-nav" role="navigation">
+
+					<h2 id="mainmenulabel" class="show-for-sr">Main Menu</h2>
+					<ul>
+						<li class="menu-item has-children" aria-expanded="false">
+							<a href="javascript: void(0)" aria-haspopup="true" aria-owns="sub-menu-1" id="menu-item-1-link">Buy a Home</a>
+							<div class="sub-menu" id="sub-menu-1" role="group" aria-labelledby="menu-item-1-link">
+								<ul>
+									<li class="left">
+										<a href="#">Buy in Canada</a>
+										<ul>
+											<li><a href="#">Ottawa</a></li>
+											<li><a href="#">Toronto & GTA</a></li>
+											<li><a href="#">Calgary</a></li>
+										</ul>
+									</li>
+									<li class="left">
+										<a href="#">Buy in USA</a>
+										<ul>
+											<li><a href="#">Florida</a></li>
+											<li><a href="#">South Carolina</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Homeowner Login</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item has-children" aria-expanded="false">
+							<a href="javascript: void(0)" aria-haspopup="true" aria-owns="sub-menu-2" id="menu-item-2-link">Rent an Apartment</a>
+							<div class="sub-menu" id="sub-menu-2" role="group" aria-labelledby="menu-item-2-link">
+								<ul>
+									<li>
+										<a href="#">Rent with Mantle</a>
+										<ul>
+											<li><a href="#">Ottawa</a></li>
+											<li><a href="#">Toronto & GTA</a></li>
+											<li><a href="#">Calgary</a></li>
+											<li><a href="#">Edmonton</a></li>
+											<li><a href="#">London</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Renter Login</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item">
+							<a href="javascript: void(0)">Lease Commercial Space</a>
+						</li>
+						<li class="menu-item">
+							<a href="javascript: void(0)">Invest</a>
+						</li>
+						<li class="menu-item">
+							<a href="javascript: void(0)">About Us</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Contact Us</a>
+						</li>
+						<li class="search">
+							<button>
+								<i role="presentation" aria-hidden="true" class="fas fa-search"></i>
+								<span class="show-for-sr">Search</span>
+							</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="searchbar">
+			<div class="row">
+				<div class="columns">
+					<div class="searchbar--wrap">
+						<label for"search" class="offscreen">Search</label>
+						<input type="text" id="search" placeholder="Search site"/>
+						<button class="button">Search mantle.com</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- hide menu toggle for screenreaders -->
+		<div id="nav-toggle" class="nav-toggle" aria-hidden="true">
+			<!--  When expanded, change aria-expanded to true-->
+			<button class="hamburger" type="button" aria-expanded="false">
+			<i role="presentation" aria-hidden="true" class="fas fa-bars"></i>
+			</button>
+		</div>
+
+	</header>
+
+  	<!-- main section requires #page-content id for skiplink to work -->
+  	<main id="page-content" role="main">
+
+	<!-- Regions of the page semantically self-contained can have a region and aria-label to describe their purpose -->
+	<section class="content-block natural-language">
+		<div class="row">
+			<div class="columns">
+			<h1>Discover a place you'll want to call home</h1>
+			<div class="natural-language_form">
+				<div class="natural-language_form--container">
+					<p class="natural-language_form-title">I want to...</p>
+					<label for="space">Select Space</label>
+					<select class="natural-language_select" name="space" id="space" aria-required >
+						<option value="">Select Space</option>
+						<option value="">Toronto</option>
+						<option value="">Prince Edward island</option>
+					</select>
+				</div>
+				<div class="natural-language_form--container">
+					<p class="natural-language_form-title">in</p>
+					<label aria-describedby="I want to" for="region">Select Region</label>
+					<select class="natural-language_select" name="region" id="region" aria-required>
+						<option value="">Select Region</option>
+						<option value="">Select Region</option>
+						<option value="">Select Region</option>
+					</select>
+				</div>
+				<div class="natural-language_form--container">
+					<!-- since this form will route users to other pages, a link is more semantic than a button screenreader users will not visually associate go with their form submissions, sr text is needed -->
+					<p class="button"><a href="#">Go</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-block hero-banner video" style="background-image: url(dist/img/temp/invest.png);">
+		<div class="row">
+			<div class="small-10 medium-8 small-centered columns">
+				<h2>Homebuilder, developer, property and investment manager for over 60 years</h2>
+				<div class="play-video">
+					<button type="button" data-url="https://www.youtube.com/embed/CTv0MZBCQCs">
+						<span class="show-for-sr">Click to play video, if you would like a text description, it follows this video</span>
+						<i role="presentation" aria-hidden="true" class="fas fa-play-circle"></i>
+						<div>Play Video</div>
+					</button>
+				</div>
+				<span class="show-for-sr">Text description of Mantle Video</span>
+				<p class="button"><a href="#">Read our Story</a></p>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</section>
+
+	<section class="content-block call-to-actions color-grey">
+		<header class="row content-block--header">
+			<div class="columns centered">
+				<h2>Our Company</h2>
+			</div>
+		</header>
+		<div class="row content-block--detail">
+			<article class="medium-4 columns end cta">
+				<a href="#" class="circular">
+					<img src="dist/img/temp/CAN.png" alt="">
+					<p class="circular--text">Buy in Canada</p>
+				</a>
+				<div class="our-company_text">
+					<h3>Building New Homes and Condos for over 60 years</h3>
+					<p>Our goal is to create beautifully designed and sustainably built homes to meet your needs at all stages of life. Explore our new homes and condoes for sale in <a href="#">Ottawa</a>, <a href="#">Toronto</a> and <a href="#">Calgary</a>.</p>
+				</div>
+			</article>
+			<article class="medium-4 columns end cta">
+				<a href="#" class="circular">
+					<img src="dist/img/temp/CAN.png" alt="">
+					<p class="circular--text">Buy in Canada</p>
+				</a>
+				<div class="our-company_text">
+					<h3>Building New Homes and Condos for over 60 years</h3>
+					<p>Our goal is to create beautifully designed and sustainably built homes to meet your needs at all stages of life. Explore our new homes and condoes for sale in <a href="#">Ottawa</a>, <a href="#">Toronto</a> and <a href="#">Calgary</a>.</p>
+				</div>
+			</article>
+			<article class="medium-4 columns end cta">
+				<a href="#" class="circular">
+					<img src="dist/img/temp/CAN.png" alt="">
+					<p class="circular--text">Buy in Canada</p>
+				</a>
+				<div class="our-company_text">
+					<h3>Building New Homes and Condos for over 60 years</h3>
+					<p>Our goal is to create beautifully designed and sustainably built homes to meet your needs at all stages of life. Explore our new homes and condoes for sale in <a href="#">Ottawa</a>, <a href="#">Toronto</a> and <a href="#">Calgary</a>.</p>
+				</div>
+			</article>
+			<article class="medium-4 columns end cta">
+				<a href="#" class="circular">
+					<img src="dist/img/temp/CAN.png" alt="">
+					<p class="circular--text">Buy in Canada</p>
+				</a>
+				<div class="our-company_text">
+					<h3>Building New Homes and Condos for over 60 years</h3>
+					<p>Our goal is to create beautifully designed and sustainably built homes to meet your needs at all stages of life. Explore our new homes and condoes for sale in <a href="#">Ottawa</a>, <a href="#">Toronto</a> and <a href="#">Calgary</a>.</p>
+				</div>
+			</article>
+			<article class="medium-4 columns end cta">
+				<a href="#" class="circular">
+					<img src="dist/img/temp/CAN.png" alt="">
+					<p class="circular--text">Buy in Canada</p>
+				</a>
+				<div class="our-company_text">
+					<h3>Building New Homes and Condos for over 60 years</h3>
+					<p>Our goal is to create beautifully designed and sustainably built homes to meet your needs at all stages of life. Explore our new homes and condoes for sale in <a href="#">Ottawa</a>, <a href="#">Toronto</a> and <a href="#">Calgary</a>.</p>
+				</div>
+			</article>
+		</div>
+
+		<footer class="row content-block--actions">
+			<div class="row">
+				<div class="columns">
+					<p class="button"><a href="#">Our Company</a></p>
+				</div>
+			</div>
+		</footer>
+
+	</section>
+
+	<section class="content-block listing">
+
+		<header class="row content-block--header">
+			<div class="columns centered">
+				<h2>Latest News</h2>
+			</div>
+		</header>
+
+		<div class="row content-block--detail">
+			<div class="medium-9 large-10 medium-centered columns">
+
+				<div class="list">
+					<article class="medium-6 columns">
+						<p class="type">Homes Canada</p>
+						<h3>Mantle Capital Partners with Investors Group on Mantle Place Complex</h3>
+						<p class="button text"><a href="#">Read Press Release</a></p>
+					</article>
+					<article class="medium-6 columns">
+						<p class="type">Homes Canada</p>
+						<h3>Investors Group on Mantle Place Complex</h3>
+						<p class="button text"><a href="#">Read Press Release</a></p>
+					</article>
+					<article class="medium-6 columns">
+						<p class="type">Homes Canada</p>
+						<h3>Mantle Capital Partners with Investors Group on Mantle Place Complex</h3>
+						<p class="button text"><a href="#">Read Press Release</a></p>
+					</article>
+					<article class="medium-6 columns">
+						<p class="type">Homes Canada</p>
+						<h3>Mantle Capital Partners with Investors Group on Mantle Place Complex</h3>
+						<p class="button text"><a href="#">Read Press Release</a></p>
+					</article>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="row content-block--actions">
+			<div class="row">
+				<div class="columns">
+					<p class="button"><a href="#">Learn More</a></p>
+				</div>
+			</div>
+		</footer>
+
+	</section>
+
+  </main>
+
+  	<!-- Footer -->
+  	<footer class="site-footer" role="contentinfo">
+
+   	<div class="row footer-nav hide-for-small-only">
+		 	<div class="medium-2 columns">
+				<ul class="list-level-2">
+					<li>
+						<a href="#">Buy a Home in Canada</a>
+						<ul>
+							<li><a href="#">Ottawa</a></li>
+							<li><a href="#">Toronto & GTA</a></li>
+							<li><a href="#">Calgary</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Buy a Home in USA</a>
+						<ul>
+							<li><a href="#">Florida</a></li>
+							<li><a href="#">South Carolina</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="medium-2 columns">
+				<ul class="list-level-2">
+					<li>
+						<a href="#">Rent an Apartment</a>
+						<ul>
+							<li><a href="#">Ottawa</a></li>
+							<li><a href="#">Toronto & GTA</a></li>
+							<li><a href="#">Calgary</a></li>
+							<li><a href="#">Edmonton</a></li>
+							<li><a href="#">London</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="medium-2 columns">
+				<ul class="list-level-2">
+					<li>
+						<a href="#">Lease Commercial Space</a>
+						<ul>
+							<li><a href="#">Ottawa</a></li>
+							<li><a href="#">Toronto & GTA</a></li>
+							<li><a href="#">London</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="medium-2 columns">
+				<ul class="list-level-2">
+					<li>
+						<a href="#">Invest</a>
+						<ul>
+							<li><a href="#">Private Investments</a></li>
+							<li><a href="#">Public Investments (REIT)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="medium-2 columns">
+				<ul class="list-level-2">
+					<li>
+						<a href="#">About</a>
+						<ul>
+							<li><a href="#">Mantle's History</a></li>
+							<li><a href="#">Our Company</a></li>
+							<li><a href="#">Our Values</a></li>
+							<li><a href="#">Sustainability</a></li>
+							<li><a href="#">News & Awards</a></li>
+							<li><a href="#">Live Better Blog</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="medium-2 columns">
+				<ul class="list-level-2">
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+					<li>
+						<a href="#">Careers</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row social">
+			<div class="medium-2 columns hide-for-small-only">
+			<img src="dist/img/mantle-logo.svg" alt="Mantle">
+			</div>
+			<div class="medium-7 large-8 columns">
+			<p>The Mantle Group is a fully integrated real estate company offereing new himes and condos, apartment rentals, furnished suites, commercial space, property and management. The Mantle group refers collectively to Mantle Inc. and its affiliated companies.</p>
+			</div>
+			<div class="medium-3 large-2 columns hide-for-small-only">
+			<p>Follow us:</p>
+			<!-- this aria label gives screen-reader users easy access to social media -->
+			<ul aria-label="Social Media" class="footer_social-container">
+				<!-- Each social icon needs screen reader text and icons should be hidden from screen-reader users -->
+				<li>
+					<a href="#">
+					<i role="presentation" aria-hidden="true" class="fab fa-twitter"></i>
+					<span class="show-for-sr">View Mantle's twitter page</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i role="presentation" aria-hidden="true" class="fab fa-youtube"></i>
+					<span class="show-for-sr"> Mantle's YouTube page</span>
+					</a>
+					</li>
+				<li>
+					<a href="#">
+					<i role="presentation" aria-hidden="true" class="fab fa-facebook"></i>
+					<span class="show-for-sr">View Mantle's Facebook page</span>
+				</a>
+				</li>
+				<li>
+					<a href="">
+					<i role="presentation" aria-hidden="true" class="fab fa-linkedin"></i>
+					<span class="show-for-sr">View Mantle's LinkedIn page</span>
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="legal">
+			<div class="row">
+				<div class="medium-6 medium-push-6 columns">
+					<ul class="footer_legal-links">
+						<li>
+							<a href="#">Disclaimer</a>
+						</li>
+						<li>
+							<a href="#">Privacy Statement</a>
+						</li>
+						<li>
+							<a href="#">Accessibility</a>
+						</li>
+					</ul>
+				</div>
+				<div class="medium-6 medium-pull-6 columns">
+					<p class="copyright">Copyright 2018 &copy; The Mantle Group</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- End Footer -->
+
+  	<div class="row contact-info">
+	   <div class="columns">
+			<p>If you have any questions related to Mantle's privacy policy and use of commercial electronic messages, please contact Mantle Properties Inc.</p>
+	   </div>
+  	</div>
+
+ 	<button type="button" class="back-to-top">
+      <i role="presentation" aria-hidden="true"class="fas fa-chevron-up"></i>Back to top
+  	</button>
+
+	<!-- Video Overlay Modal -->
+	<div id="video-modal" tabindex="0">
+		<div class="wrap">
+			<iframe frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<button class="button close"><i role="presentation" aria-hidden="true" class="fas fa-times"></i><span class="show-for-sr">Close Video</span></button>
+	</div>
+	<!-- / Video Overlay Modal -->
+
+</div>
+<script type='text/javascript' src='dist/js/app.js'></script>
+</body>
+</html>
