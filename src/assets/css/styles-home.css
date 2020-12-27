@@ -175,6 +175,12 @@ nav a:hover {
   color: white;
 }
 
+.brains {
+  background-image: url('../img/brainstation/background.png');
+  background-size: cover;
+  color: white;
+}
+
 .fgsp {
   background-image: url('../img/fgs/background.jpg');
   background-size: cover;
