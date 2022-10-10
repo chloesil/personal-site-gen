@@ -37,18 +37,8 @@
 }
 
 .pullquote {
-  font-size: 18px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-}
-
-.pullquote:before {
-  content: '"';
-  margin-left: -5px;
-}
-
-.pullquote:after {
-  content: '"';
+  font-size: 25px;
+  color: #5476A6;
 }
 
 /* Header Area

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-content'); %>
+
+  <body>
+    
+    <%- include('_header-nav'); %>
+
+    <section class="work-content" id="top"><br>
+
+
+      <%- include('_project-nav', {
+        item1id: 'problem',
+        item1title: 'Problem Definition',
+        item2id: 'jams',
+        item2title: 'Design Jams & Sprints',
+        item3id: 'personas',
+        item3title: 'Personas',
+        item4id: 'measuring',
+        item4title: 'Measuring Success',
+        item5id: 'wireframes',
+        item5title: 'Wireframes',
+        item6id: 'closed',
+        item6title: 'Closed Beta',
+        item7id: 'quotes',
+        item7title: 'Customer Quotes',
+        item8id: 'final',
+        item8title: 'Final Product',
+      }); %>  
+
+      <img src="img/powerbi/banner.png" class="splash-image">
+
+      <div class="infopage">
+            
+        <div class="content" id="content">
+          <p>
+
+          <div class="question bold"><span class="capital">Q: </span>How can we help companies make data-driven decisions and better understand their data through visualizations and AI?</div><br>
+
+          <div class="question bold"><span class="capital">A: </span>Power BI Embedded Experience</div><div class="description bold">A simplified, automated data visualization tool inside Vena’s web app</div>Microsoft’s Power BI data analysis tool is changing the way we look at data today. At Vena, we wanted to harness its power within a simplified embedded experience inside our existing Vena web app. </p>
+          <p><span class="bold">The goal of the project is to allow current Vena users to easily create and share visualizations of their data in order to better understand the state of their business and make data-driven decisions.</span></p>
+ 
+          <p class="bold large" id="problem">Problem Definition</p>
+          <p>Financial analysts have no streamlined way to visualize the meaning and patterns behind their spreadsheet-based data, nor to share it with others. Microsoft’s Power BI tool is one of the world’s leading data visualization tools, assisting analysis to create visual graphs and dashboards out of their data, with which they can make business decisions and share insights with other folks in the company. </p>
+          <img src="img/powerbi/spread-visual.png" class="imgs" alt="A spreadsheet behind a dashboard depicting data visualizations.">  
+ 
+          <p>There are many different tools that can complete similar tasks such as Tableau, Sisense and Qlik, but after much comparison of UI features, data load, licensing costs, compatibility with Vena and other factors, we decided to go with Power BI. It has a robust featureset, but its web interface contains only a subset of the multitude of functions found in Power BI Desktop. And so, the task was to understand which features we would need that were beyond the current web interface, and enhance it with our own features all built into the existing Vena web app. </p>
+
+          <p class="bold large" id="jams">Design Jams and Sprints</p>
+          <p>Vena had a pre-existing native dashboards feature that had launched, never really met its goals, and had not been touched in as long as I had worked at the company. Because of this, we wanted to be careful in considering opinions of stakeholders across the company regarding the new visualization experience. I conducted several design sprints and workshops with internal stakeholders, ensuring we gathered feedback from a wide range of folks in customer success, sales and implementation services. </p>
+
+          <img src="img/powerbi/jams.png" class="imgs" alt="A collection of screenshots of the various workshop outputs we found.">
+ 
+          <p>Not only internal, but of course external feedback was very important to the success of the project. We completed over 140 individual calls with internal staff and customers ranging from interviews to workshops to usability testing sessions. There was some pressure not to repeat what had happened with the original dashboards project, so I aimed on the side of talking to as many people as I could. </p>
+
+          <img src="img/powerbi/airtable.gif" class="imgs" alt="A snapshot of all the call logs we have.">
+ 
+          <p class="bold large" id="personas">Personas</p>
+          <p>Our interviews showed us that most companies are looking for ways to integrate visuals into their data reports, and especially leveraging artificial intelligence to make better business decisions. The difference lies in their level of expertise in creating these visuals. Power BI Desktop can be quite overwhelming for beginners, but we knew we only needed a small subset of these features for what folks would want inside Vena. Anything beyond that, and those users would just continue doing those things inside the Desktop experience with a special Vena data connector.  </p>
+          <img src="img/powerbi/roles.png" class="imgs" alt="Our three personas.">
+ 
+          <p>And so, we have the crawler, walker and runner. In the sense of their level of Power BI and visualization knowledge, crawlers will enjoy building off of a pre-existing template with a simplified featurset, while in contrast runners may stay inside the Power BI Desktop interface while using the embedded version inside Vena as an easier way to share their completed reports with other Vena users. Using this mindset, we could create a stepped approach to make the experience useful for a wide range of people.</p>
+
+          <p class="bold large" id="measuring">Measuring Success</p>
+          <p>With all of our research and notes in hand, we created a series of metrics to guide my wireframes, designs, and the direction of the project to measure success. Specifically in the demo phase, sales staff were eager to start demonstrating our integration with Power BI to prospects as soon as possible. </p>
+          <img src="img/powerbi/metrics.png" class="imgs" alt="Our metrics for the project.">
+
+          <p class="bold large" id="wireframes">Wireframes</p>
+          <p> My first wireframes tested pretty well with a small set of six existing customers in different industries, folks were especially excited about the experience being inside the existing Vena platform they knew and loved. </p>
+          <img src="img/powerbi/wireframes.png" class="imgs" alt="The first wireframe for the dashboard interface.">
+
+          <p class="bold large" id="closed">Closed Beta</p>
+          <p>After much testing and iteration, we were ready to program our closed beta - getting ten customers set up and using the product in exchange for feedback on how to make it better. I was particularly excited to chat with customers after they had played around and made some of their own visualizations using the toolset we created for them. </p>
+
+          <img src="img/powerbi/zooms.png" class="imgs" alt="Just some of the many calls we had with clients testing the product.">
+
+          <p>Measuring against one of our early-set metrics to reduce implementation time for our services team, we were able to use our research to find areas to automate within the process of setting up reports and dashboards that all customers would need. We also introduced the standard dashboard template, which could be used for some commonly heard requests clients would give the implementation team. So instead of building it in a custom way for each client, they could now use a template to speed up the process. This was huge because it also reduced the time taken for a client to go from purchasing the product to actually gaining value from it. </p>
+
+          <img src="img/powerbi/reduced.png" class="imgs" alt="A bar chart showing our reduction of implementation time by 90%.">
+
+          <p class="bold large" id="quotes">Customer Quotes</p>
+          <p>We have done several rounds of usability testing and interviews on new feature additions to incrementally improve the experience over time, and it’s been great to see the positive feedback roll in. It underlines the fact that this project is meeting needs on a level that our old dashboards feature just wasn’t. </p>
+
+          <p class="pullquote">"I like that Power BI can allow you to do more, but you have to think more - this embedded version you made takes the thinking out of it which is great” - major university</p>
+          <p class="pullquote">“It would be easy for my CFO to come into Vena and see these visuals, I like that” - professional sports team</p>
+          <p class="pullquote">“I like the “copy report” feature - I like to play around and make copies of things to learn from” - not for profit org</p>
+          <p class="pullquote">“We are very likely to use this” - construction company</p>
+          <p class="pullquote">“This is very very cool” - major university</p>
+          <p class="pullquote">“This is exactly something we have been wanting - big win to have dashboards in the Vena browser.” - not for profit org</p>
+          <p class="pullquote">"I love the Vena Power BI standard template, especially decomposition trees, they are so intuitive and easy to present the data when it cascades down” - major university</p>
+          <p class="pullquote">“Better than what I expected, much more user friendly. A lot of folks who don't use them, this will entice them to do it" - infotech company</p>
+          <p class="pullquote">“The execs would be floored by this if they saw it...”  - risk management firm</p>
+
+
+          <p id="final">The project is really only in its infancy, but there are endless possibilities in how data visualizations can be used in every corner of this software. For now, all visualizations can be viewed as part of larger recurring reports that can be continually referenced and refreshed to keep up-to-date.</p>
+
+          <img src="img/powerbi/in-vena.png" class="imgs" alt="The reports homepage within the Vena browser interface.">
+
+        </div>
+
+      </div><br><br><br>
+
+      <hr>
+      <table border="0" align="center" width="100%"><tr>
+        <td colspan="2">
+          <
+        </td>
+        <td></td>
+        <td align="left" width="50%"><a href="../fgs">
+          <div class="next"><span class="prevnext">previous</span><br>50 Years of FGS</div>
+          </a>
+        </td></a>
+        <td align="right" width="50%"><a href="../brainstation">
+          <div class="next"><span class="prevnext">next</span><br>Brainstation</div>
+          </a>
+        </td><td></td>
+        <td colspan="2">
+          >
+        </td>
+      </tr></table>
+      <hr>
+
+    </section>
+
+    <%- include('_footer-about'); %>
+    
+  </body>
+</html>
