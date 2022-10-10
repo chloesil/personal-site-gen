@@ -187,6 +187,12 @@ nav a:hover {
   color: white;
 }
 
+.powerbi {
+  background-image: url('../img/powerbi/background.png');
+  background-size: cover;
+  color: white;
+}
+
 .fgsp {
   background-image: url('../img/fgs/background.jpg');
   background-size: cover;
