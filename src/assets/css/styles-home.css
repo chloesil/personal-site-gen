@@ -568,8 +568,14 @@ footer p {
     display: none;
   }
 
+  .phone {
+    display: none;
+  }
+
   .piece-description {
-    width: 40%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .nav-mobile {
