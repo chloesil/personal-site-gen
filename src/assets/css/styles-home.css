@@ -211,6 +211,12 @@ nav a:hover {
   color: white;
 }
 
+.daypack {
+  background-image: url('../img/daypack/background.png');
+  background-size: cover;
+  color: white;
+}
+
 .checkin {
   background-image: url('../img/checkin/background.png');
   background-size: cover;

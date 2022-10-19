@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-content'); %>
+
+  <body>
+    
+    <%- include('_header-nav'); %>
+
+    <section class="work-content" id="top"><br>
+
+
+      <%- include('_project-nav', {
+        item1id: 'problem',
+        item1title: 'Problem Definition',
+        item2id: 'survey',
+        item2title: 'Research',
+        item3id: 'synthesis',
+        item3title: 'Synthesis',
+        item4id: 'personas',
+        item4title: 'Personas',
+        item5id: 'info-arch',
+        item5title: 'Information Architecture',
+        item6id: 'sketches',
+        item6title: 'Sketches',
+        item7id: 'wireframes',
+        item7title: 'Wireframes and Usability Testing',
+        item8id: 'final',
+        item8title: 'Presenting DayPack',
+      }); %>  
+
+      <img src="img/daypack/cover.png" class="splash-image">
+
+      <div class="infopage">
+            
+        <div class="content" id="content">
+          <p>
+
+          <div class="question bold"><span class="capital">Q: </span>How can we lessen the difficulties of travelling far distances through mental and physical preparation before a trip?</div><br>
+
+          <div class="question bold"><span class="capital">A: </span>DayPack</div><div class="description bold">Your new favourite travel and packing app</div>DayPack uses an initial conversation with the traveller combined with crowd-sourced travel data to generate the perfect personalized packing list for any trip. The traveller can then customize it to their liking, and check off items as they are packed.</p>
+          <p><span class="bold">The goal of the app is to give travellers all the information they need while packing for their trip. With an interactive survey and a visual look at the weather and timezone in their destination, users can prepare both physically and mentally. In the end, they have everything they need to enjoy their trip to the fullest.</span></p>
+ 
+          <p class="bold large" id="problem">Problem Definition</p>
+          <p>Now that COVID-19 airport shutdowns are slowing and more people are vaccinated, travelling has risen in popularity again all over the world. New and seasoned travellers alike may struggle to ensure they bring everything they need to have the most enjoyable trip possible. They also may not be prepared for drastic changes in weather, climate or timezone, which can make a trip less enjoyable.</p>
+
+          <p class="bold large" id="jtbd">Jobs To Be Done</p>
+          <p class="pullquote">As a traveller, I want to pack the right stuff, so that I won’t be without anything during my trip.</p>
+          <p>Keep track of:</p>
+          <ul>
+            <li>weather/time difference *unique value add</li>
+            <li>items needed for activities</li>
+            <li>travel-specific needs</li>
+            <li>country differences (currency, adapters, etc)</li>
+          </ul>
+          <p class="pullquote">As a traveller, I want to pack more efficiently so I don’t bring the wrong things.</p>
+          <p>App Convo:</p>
+          <ul>
+            <li>where are you going?</li>
+            <li>how long?</li>
+            <li>what kinds of things will you do?</li>
+            <li>what sort of sleeping arrangements do you have provided?</li>
+            <li>how will you get around?</li>
+          </ul>
+          <p class="pullquote">As a traveller, I want to keep track of what I’ve packed, so I know what I have and don’t lose anything.</p>
+          <ul>
+            <li>review generated packing list</li>
+            <li>add/remove items to packing list</li>
+            <li>check items off to declare as “packed”</li>
+          </ul>
+ 
+          <p class="bold large" id="survey">Open Survey</p>
+          <p>about trip planning. I wanted a varied opinion set to start from, so I designed a survey and opened it up to the internet to share their thoughts with me. Questions centered around:</p>
+          <ul>
+            <li>number of trips per year and purpose of trips</li>
+            <li>tools used to pack for a trip</li>
+            <li>factors that affect packing</li>
+            <li>packing tips and tricks</li>
+          </ul>
+
+          <img src="img/daypack/pie.png" class="imgs" alt="Pie chart breaking down which users would use a packing app.">
+          <p>Many people already make a list for packing that they like to reuse, whether it is a digital or physical list. 77% said they use a list or would like to use one.</p>
+
+          <img src="img/daypack/bar - factors.png" class="imgs" alt="Factor voting in a bar chart format.">
+          <p>Activities and weather/climate were the most common factors that would make trip planning difficult. </p>
+
+          <img src="img/daypack/bar - packing.png" class="imgs" alt="Packing weight voting in a bar chart format.">
+          <p>Most people like to pack what they need but not too much, struggling to find the right balance to fit in their suitcase. Laundry came up several times in the freeform answer section - something I had not thought of personally. These insights gave me my focus for the app and the problems it would solve.</p>
+ 
+          <p class="bold large" id="competitor-research">Competitor Research</p>
+          <img src="img/daypack/packingapps.png" class="imgs" alt="Packing app competitor research.">
+          <p>I divided my competitive research between existing packing apps and weather apps, since my app would be a sort of combination of the two. There are quite a few packing apps already on the market, which gave me a lot to learn from and some lessons on what not to do. Only one app included weather as part of its interface, but forced the user to select from a gender binary as the first step when opening the app. It went downhill from there: most apps did not allow for any kind of trip detail entry, acting as a glorified notes app. I knew that both the packing list, and the initial trip detail entry would need to be engaging and certainly do more for the traveller than a static checklist.</p>
+
+          <img src="img/daypack/weatherapps.png" class="imgs" alt="Weather app competitor research.">
+          <p>Weather apps are actually a pretty fun and diverse product area. Weather tends to affect everyone so this is an app most people have on their phone. The balance between visualizing the current weather and showing intense tables of data is a struggle in most interfaces that I looked at. I thought the immersive nature of visualizing the background as the current weather, like a window to the real world, was very intriguing. Big shoutout to Carrot Weather, which uses a very snarky and funny interface with a sass level selector in case you find it too mean.</p>
+ 
+          <p class="bold large" id="synthesis">Synthesis</p>  
+          <img src="img/daypack/Sticky Notes.png" class="imgs" alt="Post its grouped into an affinity map from all the survey results.">
+          <p>Weather is the largest factor for almost every traveller. They will want to know the weather for each day of their trip, in the city they will be in at that time. There is an issue of having the right stuff for multiple climates (even within one day) and when they are travelling to a place with a drastically different temperature than their home.</p>
+          <p>Activities is the second largest factor, tailing weather by only a smidgen. Travellers want to know how to pack their nice clothing without damaging it. They want to know what they can buy or rent on their trip and what is most necessary to bring. </p>
+          <p>When packing, travellers want to pack as light as possible while also ensuring they have everything they need. They will do laundry to cut down the amount of clothing they need, and like items that can serve multiple purposes.</p>
+          <p>Packing lists are not just for items, but can also be a keeping place for notes, TODOs and sharing trip information with one’s travel partner. They can be reused for multiple trips, and can be fine-tuned over time with editing and experience.</p>
+ 
+          <p class="bold large" id="personas">Personas</p>
+          <p>My goal is to make this app useful for new and seasoned travellers, so my personas will reflect that.</p>
+          <img src="img/daypack/persona1.png" class="imgs" alt="Courtney Hanson.">
+          <p></p>
+          <img src="img/daypack/persona2.png" class="imgs" alt="Floyd Miles.">
+          <p></p>
+          <img src="img/daypack/persona3.png" class="imgs" alt="Scott & Jen Gish.">
+
+          <p class="bold large" id="info-arch">Information Architecture</p>
+          <p>Trip planning can encompass so many aspects, but I wanted to keep this as simple as possible to make the list really shine in what it can do for the traveller. Since so many folks already use a simple list, I wanted this to be a big step up within the same kind of experience.</p>
+          <p>Flowchart</p>
+          <img src="img/daypack/flow.png" class="imgs" alt="Flowchart.">
+          <p>Information Architecture</p>
+          <img src="img/daypack/IA.png" class="imgs" alt="Information Architecture.">
+
+          <p class="bold large" id="sketches">Sketches</p>
+          <p>I like to sketch with a sharpie so I don’t get too bogged down in the details in this stage. Sketching on real paper will always be key for me at this stage to let the creative juices flow as best they can.</p>
+          <img src="img/daypack/sketches.png" class="imgs" alt="Early app sketches.">
+
+          <p class="bold large" id="wireframes">Wireframes & Usability Test 1</p>
+          <p>I like to create an early wireframe set and get it in front of test subjects as soon as possible before I get too deep into the screen design. All my sketching had gotten me so excited that I created two styles for both the trip survey and packing list, with which I conducted moderated A/B testing on five test subjects. </p>
+          <img src="img/daypack/wireframes.png" class="imgs" alt="The first wireframes for two styles of flow.">
+
+          <p>My script included moving through the trip survey using the test subject’s own real upcoming travel plans, and then interacting with the generated packing list. I created the flows with Figma Prototyping and shared the link with subjects to complete directly on their own shared screen. Even while alternating which flow I sent users through first, 80% preferred the card survey over the chatbot. There can be a sense of urgency when messaging with a chatbot, thinking that they are waiting for your answer impatiently and may time out at any moment.</p>
+
+          <p>I also found users were confused when they were looking at weather, with the question of whether this was the weather right now or would be the weather during the trip.</p>
+
+          <p>The biggest realization I had was that even the most tech-savvy testers were confused when they didn’t see a visual checkbox for each item. Even after tapping items and discovering a line would draw itself through them, that was not their expectation for a packing list. </p>
+
+          <p class="bold large" id="moodboard">Moodboard</p>
+          <img src="img/daypack/moodboard.png" class="imgs" alt="Standard Dashboard Template.">
+          <p>After integrating all the feedback from the testing sessions, I went back to my original visual inspiration and organized all of it into a sort of moodboard. Since packing can be stressful I wanted to explore curved UI with no sharp edges. This would carry a calming mood along with various symbolism of sky and weather. Around this time I decided to play with the concept of day/night mode to reflect time of day in the destination. I started looking at photos of the sky at different times of day and drew my colour and tone from that.</p>
+
+          <p class="bold large" id="usability">Usability Testing 2</p>
+          <p>With my moodboard inspiration added to my current mid-fidelity mocks, I was ready for another usability testing session with five new subjects. I ran them through the same set of tasks as the first test, noting a quicker understanding of some elements I had fixed. There were also new questions relating to the new visual elements I had introduced, such as animated transitions and overlays.</p>
+
+          <p>I had since fixed the question of when the weather was being displayed for, by including the current time at the destination right beside it (successfully signifying “now”). More of the feedback this time around was edge cases of real trips these users had taken, which told me that the app was looking more real and believable.</p>
+
+          <p class="pullquote">"I love how simple this is"</p>
+          <p class="pullquote">Referencing tips feature: “Here’s the value add”</p>
+          <p class="pullquote">“This is very basic and user friendly”</p>
+          <p class="pullquote">“You changed my mind about not using a list to pack”</p>
+
+          <p class="bold large" id="final">Presenting DayPack</p>
+          <center>
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="360" height="640" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/7yZuAnJgWXEfSHdOwCdrN1/DayPack?node-id=380%3A29861&scaling=min-zoom&page-id=369%3A11372&starting-point-node-id=380%3A29861&hotspot-hints=0&hide-ui=1" allowfullscreen></iframe></center>
+        </div>
+
+      </div><br><br><br>
+
+      <hr>
+      <table border="0" align="center" width="100%"><tr>
+        <td colspan="2">
+          <
+        </td>
+        <td></td>
+        <td align="left" width="50%"><a href="../mantle">
+          <div class="next"><span class="prevnext">previous</span><br>Mantle</div>
+          </a>
+        </td></a>
+        <td align="right" width="50%"><a href="../powerbi">
+          <div class="next"><span class="prevnext">next</span><br>Power BI Embed</div>
+          </a>
+        </td><td></td>
+        <td colspan="2">
+          >
+        </td>
+      </tr></table>
+      <hr>
+
+    </section>
+
+    <%- include('_footer-about'); %>
+    
+  </body>
+</html>
