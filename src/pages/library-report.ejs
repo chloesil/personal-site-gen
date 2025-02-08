@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <%- include('_head-content'); %>
+
+  <body>
+    
+    <%- include('_header-nav'); %>
+
+    <section class="work-content" id="top"><br>
+
+
+      <%- include('_project-nav', {
+        item1id: 'problem',
+        item1title: 'Problem Definition',
+        item2id: 'research',
+        item2title: 'Research Methods',
+        item3id: 'personas',
+        item3title: 'Personas',
+        item4id: 'measuring',
+        item4title: 'Measuring Success',
+        item5id: 'wireframes',
+        item5title: 'Wireframes',
+        item6id: 'final',
+        item6title: 'Final Design',
+        item7id: 'release',
+        item7title: 'Release',
+        item8id: 'prototype',
+        item8title: 'Prototype',
+        item9id: 'post-launch',
+        item9title: 'Post-launch',
+        item10id: 'future',
+        item10title: 'Future of this project',
+      }); %>  
+
+      <img src="img/library-report/cover.png" class="splash-image">
+
+      <div class="infopage">
+            
+        <div class="content" id="content">
+          <p>
+
+          <div class="question bold"><span class="capital">Q: </span>How can we give companies more ownership over their business data?</div><br>
+
+          <div class="question bold"><span class="capital">A: </span>Loopio Library Reporting Dashboard</div><div class="description bold">A data visualization tool inside the Loopio web platform</div>
+
+          <p><span class="bold">The goal of the project is to allow current Vena users to easily create and share visualizations of their data. They can then better understand the state of their business and make data-driven decisions.</span></p>
+ 
+          <p class="bold large" id="problem">Problem Definition</p>
+          <p>Financial analysts have no streamlined way to visualize or communicate the meaning behind their spreadsheet-based data. Microsoft’s Power BI tool is one of the world’s leading data visualization tools, assisting analysis to create visual graphs and dashboards out of their data. With Power BI, they can make data-driven business decisions and share insights with colleagues. </p>
+          <img src="img/library-report/old-version.png" class="imgs" alt="">  
+ 
+          <p>There are many tools that can complete similar tasks such as Tableau, Sisense and Qlik, but after much comparison of UI features, data load, licensing costs, compatibility with Vena and other factors, we decided to partner with Power BI. It has a robust featureset, but its web interface contains only a subset of the functions found in Power BI Desktop. Our task was to understand which features we would need that were beyond the current web interface, and enhance it with our own features built into the existing Vena web app. </p>
+
+          <p class="bold large" id="research">Research Methods</p>
+          <p>Vena had launched a pre-existing native dashboards feature that never really met its goals and had not been changed since before I started working at the company. We wanted to carefully consider the opinions of our internal colleagues regarding the new visualization experience. I conducted several design sprints and workshops with internal stakeholders in customer success, sales, support and implementation services.</p>
+
+          <img src="img/library-report/jam.png" class="imgs" alt="">
+ 
+          <p><ol></ol>
+
+          <img src="img/library-report/synthesis.png" class="imgs" alt="">
+ 
+          <p class="bold large" id="personas">Personas</p>
+          <img src="img/library-report/personas.png" class="imgs" alt="Our three personas.">
+          <p>Our interviews showed us that most companies are looking for ways to integrate visuals into their data reports, and especially leveraging artificial intelligence to make better business decisions. The difference lies in their skill in creating these visuals. Power BI Desktop can be overwhelming for beginners, but research showed us that only a subset of features was required for most of our less-skilled audience. Advanced users would continue their usual tasks inside their Power BI Desktop experience with a separate Vena data connector.</p>
+
+          <p class="bold large" id="measuring">Measuring Success</p>
+          <p>With all of our research and notes in hand, we created a series of success metrics. These were useful to guide my wireframes, designs, and the direction of the project. Specifically in the demo phase, sales staff were eager to start demonstrating our integration with Power BI to prospects as soon as possible. </p>
+          <img src="img/library-report/lost-deals.png" class="imgs" alt="">
+
+          <p class="bold large" id="wireframes">Wireframes</p>
+          <p> My first wireframes tested pretty well with a small set of six existing customers in different industries. They were especially excited about the experience being inside the existing Vena platform that they already knew how to use.</p>
+          <img src="img/library-report/amplitude-0.png" class="imgs" alt="">
+
+          <p class="bold large" id="final">Final Design</p>
+          <p>After much testing and iteration, we were ready to program our closed beta. This involved setting up ten customers to use the product in exchange for feedback on how to make it better. I was particularly excited to chat with customers after they had made some of their own visualizations using our toolset. </p>
+
+          <img src="img/library-report/new-version.png" class="imgs" alt="">
+          <img src="img/library-report/table-page.png" class="imgs" alt="">
+
+          <p class="bold large" id="release">Release</p>
+          <img src="img/library-report/amplitude-1.png" class="imgs" alt="">
+          <p>We have done several rounds of usability testing and interviews on new feature additions to incrementally improve the experience over time. It’s been great to see the positive feedback roll in. This underlines the fact that this project is meeting needs on a level that our legacy reporting feature just wasn’t. </p>
+
+          <p class="pullquote">"I like that Power BI can allow you to do more, but you have to think more - this embedded version you made takes the thinking out of it which is great” - major university</p>
+          <p class="pullquote">“It would be easy for my CFO to come into Vena and see these visuals, I like that” - professional sports team</p>
+          <p class="pullquote">“I like the “copy report” feature - I like to play around and make copies of things to learn from” - not for profit org</p>
+          <p class="pullquote">“We are very likely to use this” - construction company</p>
+
+          <p class="bold large" id="post-launch">Prototype</p>
+
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/220wfY0bsIzZ8Q0lowxc8I/Chloe's-Portfolio?node-id=206-3188&scaling=scale-down&content-scaling=fixed&page-id=201%3A2&starting-point-node-id=206%3A3188&embed-host=share" allowfullscreen></iframe>
+
+          <p class="bold large" id="post-launch">Post-launch</p>
+
+          <img src="img/library-report/amplitude-2.png" class="imgs" alt="">
+          <p>words</p>
+
+          <p class="bold large" id="future">Future of this project</p>
+
+          <img src="img/library-report/ai-version.png" class="imgs" alt="">
+          <p>words</p>
+
+        </div>
+
+      </div><br><br><br>
+
+      <hr>
+      <table border="0" align="center" width="100%"><tr>
+        <td colspan="2">
+          <
+        </td>
+        <td></td>
+        <td align="left" width="50%"><a href="../daypack">
+          <div class="next"><span class="prevnext">previous</span><br>DayPack</div>
+          </a>
+        </td></a>
+        <td align="right" width="50%"><a href="../kardia">
+          <div class="next"><span class="prevnext">next</span><br>Kardia</div>
+          </a>
+        </td><td></td>
+        <td colspan="2">
+          >
+        </td>
+      </tr></table>
+      <hr>
+
+    </section>
+
+    <%- include('_footer-about'); %>
+    
+  </body>
+</html>

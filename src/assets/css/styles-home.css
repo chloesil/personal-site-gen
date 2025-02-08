@@ -193,6 +193,12 @@ nav a:hover {
   color: white;
 }
 
+.library {
+  background-image: url('../img/library-report/background.png');
+  background-size: cover;
+  color: white;
+}
+
 .fgsp {
   background-image: url('../img/fgs/background.jpg');
   background-size: cover;
