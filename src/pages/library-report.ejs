@@ -15,22 +15,18 @@
         item1title: 'Problem Definition',
         item2id: 'research',
         item2title: 'Research Methods',
-        item3id: 'personas',
-        item3title: 'Personas',
-        item4id: 'measuring',
-        item4title: 'Measuring Success',
-        item5id: 'wireframes',
-        item5title: 'Wireframes',
-        item6id: 'final',
-        item6title: 'Final Design',
-        item7id: 'release',
-        item7title: 'Release',
-        item8id: 'prototype',
-        item8title: 'Prototype',
-        item9id: 'post-launch',
-        item9title: 'Post-launch',
-        item10id: 'future',
-        item10title: 'Future of this project',
+        item3id: 'measuring',
+        item3title: 'Measuring Success',
+        item4id: 'wireframes',
+        item4title: 'Wireframes',
+        item5id: 'final',
+        item5title: 'Final Design & Prototype',
+        item6id: 'release',
+        item6title: 'Release',
+        item7id: 'post-launch',
+        item7title: 'Post-launch',
+        item8id: 'future',
+        item8title: 'Future of this project',
       }); %>  
 
       <img src="img/library-report/cover.png" class="splash-image">
@@ -42,65 +38,111 @@
 
           <div class="question bold"><span class="capital">Q: </span>How can we give companies more ownership over their business data?</div><br>
 
-          <div class="question bold"><span class="capital">A: </span>Loopio Library Reporting Dashboard</div><div class="description bold">A data visualization tool inside the Loopio web platform</div>
+          <div class="question bold"><span class="capital">A: </span>Loopio Library Report</div><div class="description bold">A data visualization dashboard inside the Loopio web platform</div>
 
-          <p><span class="bold">The goal of the project is to allow current Vena users to easily create and share visualizations of their data. They can then better understand the state of their business and make data-driven decisions.</span></p>
+          <p><span class="bold">The goal of the project is to bring meaning to the usage metrics of our clients’ content libraries and increase success rates of their bids on Requests for Proposals (commonly shortened to RFPs). We aimed to make a tool for our users to measure the effectiveness of their content in responding to RFPs, and whether the content is effective enough to win current and future bids. </span></p>
  
           <p class="bold large" id="problem">Problem Definition</p>
-          <p>Financial analysts have no streamlined way to visualize or communicate the meaning behind their spreadsheet-based data. Microsoft’s Power BI tool is one of the world’s leading data visualization tools, assisting analysis to create visual graphs and dashboards out of their data. With Power BI, they can make data-driven business decisions and share insights with colleagues. </p>
-          <img src="img/library-report/old-version.png" class="imgs" alt="">  
+          <p>The Loopio platform provides a space for users to maintain a library of content used to respond to RFPs. This questionnaire response process is the main way our clients obtain work, so keeping an exemplary library of content that is ready for use in questionnaires is extremely important to them.</p>
+
+          <p>Loopio helps clients to measure the “health” of each piece of library content to ensure it is up to date. A lean library is the best tool to quickly answer RFPs, so our clients will often assign an internal role of “Loopio champion” who will keep the library in good shape. The champion needs the answers to metrics-based questions like “Were these pieces of content updated by anyone in the last six months?” and “Which common RFP questions do I not currently have answers for inside the library?” Their task is to find gaps to close, old content to freshen, and unused content to remove. The legacy report below helped them to answer some of these questions, but had many data gaps.</p>
+          <img src="img/library-report/old-version.png" class="imgs" alt="The legacy screen for the library report, basically just a table with no visuals.">  
  
-          <p>There are many tools that can complete similar tasks such as Tableau, Sisense and Qlik, but after much comparison of UI features, data load, licensing costs, compatibility with Vena and other factors, we decided to partner with Power BI. It has a robust featureset, but its web interface contains only a subset of the functions found in Power BI Desktop. Our task was to understand which features we would need that were beyond the current web interface, and enhance it with our own features built into the existing Vena web app. </p>
+          <p>The legacy report was not much more than a table, missing visualizations or key actionable metrics. Half of this table was completely hidden in overflow to the right. Upon later interviews with some of our Loopio champions, many of them were unaware that the table could scroll at all, leaving that data unseen. </p>
 
           <p class="bold large" id="research">Research Methods</p>
-          <p>Vena had launched a pre-existing native dashboards feature that never really met its goals and had not been changed since before I started working at the company. We wanted to carefully consider the opinions of our internal colleagues regarding the new visualization experience. I conducted several design sprints and workshops with internal stakeholders in customer success, sales, support and implementation services.</p>
+          <p>There were many client requests to our customer service team for custom data exports that the Library Report could not answer for them. From these requests we were able to put together a list of the most requested data and create first iterations of charts.</p>
 
-          <img src="img/library-report/jam.png" class="imgs" alt="">
+          <p>I presented that data to my team in a “what if” brainstorm jam to test the limits of what we could do with the page. I then collected and synthesized all the ideas and combined them into my designs.</p>
+
+          <img src="img/library-report/jam.png" class="imgs" alt="A screenshot of a jam with several designers in Figma to make a reporting dashboard with the tidbits of information I gave them.">
  
-          <p><ol></ol>
+          <p>With a rough visual of the new report in hand, we conducted six internal calls with customer success managers and eight external client calls around what users would expect from reporting for their library content. Interviewees requested:
+            <ul>
+              <li>A visual dashboard of their data</li>
+              <li>To see how the data has changed over time</li>   
+              <li>To customize their report based on user or business needs</li>   
+              <li>More data and understanding around usage, review status, and suggested actions to improve library usage</li>   
+              <li>Filtering by specific elements to see the piece of the story they care about most</li>   
+              <li>Ability to share elements of the report with their leaders</li>
+            </ul></p>
 
-          <img src="img/library-report/synthesis.png" class="imgs" alt="">
+          <p></p>
+          <img src="img/library-report/synthesis.png" class="imgs" alt="The key outcomes from the research activities."><p>The key outcomes and organization of all the research activities.</p> 
  
           <p class="bold large" id="personas">Personas</p>
           <img src="img/library-report/personas.png" class="imgs" alt="Our three personas.">
-          <p>Our interviews showed us that most companies are looking for ways to integrate visuals into their data reports, and especially leveraging artificial intelligence to make better business decisions. The difference lies in their skill in creating these visuals. Power BI Desktop can be overwhelming for beginners, but research showed us that only a subset of features was required for most of our less-skilled audience. Advanced users would continue their usual tasks inside their Power BI Desktop experience with a separate Vena data connector.</p>
+          <p>The redesign focused mainly on our persona Mary, empowering her to make data-driven decisions to increase the health of her content library. That in turn would increase Ray’s confidence in the library content as a tool to respond to RFPs, and increase Kara’s confidence that Loopio is providing tools to help her company win more RFP bids.
+</p>
 
           <p class="bold large" id="measuring">Measuring Success</p>
-          <p>With all of our research and notes in hand, we created a series of success metrics. These were useful to guide my wireframes, designs, and the direction of the project. Specifically in the demo phase, sales staff were eager to start demonstrating our integration with Power BI to prospects as soon as possible. </p>
-          <img src="img/library-report/lost-deals.png" class="imgs" alt="">
+          <p class="bold">Increase deals won by filling reporting feature gap</p>
+          <p>We were losing deals due to our lack of reporting that meets client needs. Worse yet, this was the leading cited reason for enterprise-level prospects who ultimately selected our competition.</p>
+          <img src="img/library-report/lost-deals.png" class="imgs" alt="A bar chart showing that our lack of a reporting feature is the number one reason for lost deals among the enterprise sector.">
+
+          <p class="bold">Increase library report pageviews</p>
+          <p>This project aimed to raise our company’s north star metric of percentage of users deploying content and generally using Loopio itself. The page was receiving roughly 1000 unique pageviews per month before the redesign. I’ll share the increase we achieved further down the page.</p>
+          <img src="img/library-report/amplitude-0.png" class="imgs" alt="Amplitude report of the legacy library report views since its inception.">
+
+          <p class="bold">Improve Usability</p>
+          <p>We had a great opportunity here to fix the issues on the existing page: the table hiding half of its content, the inflexibility of the filtering feature, and the lack of any visuals to better display the rate of health.</p>
+
+          <p class="bold">Decrease amount of PS requests</p>
+          <p>Our professional services team was taking a considerable amount of time in providing custom data exports to customers who needed metrics simply not accessible through the legacy report. If we added that data to the report we could easily save them that time. </p>
 
           <p class="bold large" id="wireframes">Wireframes</p>
-          <p> My first wireframes tested pretty well with a small set of six existing customers in different industries. They were especially excited about the experience being inside the existing Vena platform that they already knew how to use.</p>
-          <img src="img/library-report/amplitude-0.png" class="imgs" alt="">
+          <p> There were two major elements to consider in the visual redesign - the charts chosen for data and the way they were displayed, as well as the layout of the dashboard view of the report to be able to show information in the correct hierarchy.</p>
+          <img src="img/library-report/wires-charts.png" class="imgs" alt="A screenshot from Figma of the information I translated into visual charts.">
+          <p>The most requested data made its way into a visual chart, of which I ideated over several kinds of charts, bar, pie, line, scattered, etc) to understand which would best showcase the data.</p>
+          <img src="img/library-report/wires-layout.png" class="imgs" alt="An exploration of the layouts that the charts could live in on the page.">
+          <p>The addition of charts to the page brought layout concerns. I explored various options here around how to size the charts, where to put the table of data (which was important but now secondary) and what order to put them in on the page.</p>
+          <p>In a future iteration we will allow our clients to resize and reorder the charts to their own customizations.</p>
 
-          <p class="bold large" id="final">Final Design</p>
-          <p>After much testing and iteration, we were ready to program our closed beta. This involved setting up ten customers to use the product in exchange for feedback on how to make it better. I was particularly excited to chat with customers after they had made some of their own visualizations using our toolset. </p>
+          <p class="bold large" id="final">Final Design & Prototype</p>
+          <p>Selected design details:
+            <ul>
+              <li>The filtering sidebar gives many more options than before, and it is more accessible as a collapsible sidebar rather than the previous modal which covered the charts when in use</li>
+              <li>Users can hover over any chart element to understand the exact number and label without having to squint or align elements</li>
+              <li>Users can also click or select chart elements to filter the data based on that element (a shortcut instead of using the filtering sidebar)</li>
+              <li>Whenever filtering is activated, the chart view clearly states this so there is no confusion over the state of the data </li>
+              <li>The chart is refreshed every 60 minutes to provide up-to-date information, but users can select to refresh at any time</li>
+              <li>We also improved the exported .xlsx file for users who prefer to view and manipulate their data in Excel as they wish</li>
+            </ul>
+          </p>
 
-          <img src="img/library-report/new-version.png" class="imgs" alt="">
-          <img src="img/library-report/table-page.png" class="imgs" alt="">
+          <img src="img/library-report/new-version.png" class="imgs" alt="The new version of the library report dashboard.">
+          <img src="img/library-report/table-page.png" class="imgs" alt="The new version of the library report table view.">
 
-          <p class="bold large" id="release">Release</p>
-          <img src="img/library-report/amplitude-1.png" class="imgs" alt="">
-          <p>We have done several rounds of usability testing and interviews on new feature additions to incrementally improve the experience over time. It’s been great to see the positive feedback roll in. This underlines the fact that this project is meeting needs on a level that our legacy reporting feature just wasn’t. </p>
-
-          <p class="pullquote">"I like that Power BI can allow you to do more, but you have to think more - this embedded version you made takes the thinking out of it which is great” - major university</p>
-          <p class="pullquote">“It would be easy for my CFO to come into Vena and see these visuals, I like that” - professional sports team</p>
-          <p class="pullquote">“I like the “copy report” feature - I like to play around and make copies of things to learn from” - not for profit org</p>
-          <p class="pullquote">“We are very likely to use this” - construction company</p>
-
-          <p class="bold large" id="post-launch">Prototype</p>
+          <p class="bold large">Prototype</p>
 
           <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/220wfY0bsIzZ8Q0lowxc8I/Chloe's-Portfolio?node-id=206-3188&scaling=scale-down&content-scaling=fixed&page-id=201%3A2&starting-point-node-id=206%3A3188&embed-host=share" allowfullscreen></iframe>
 
+          <p class="bold large" id="release">Release</p>
+          <img src="img/library-report/amplitude-1.png" class="imgs" alt="Amplitude report of the legacy library report views compared to the new report, before and after launch.">
+          <p>We ran a 75-participant beta program for four months, during which you can see steady adoption from November to February of 2024. Then, in two short months since our February launch, the new Library Report eclipsed the legacy report in view counts (passing 2000 views per month).</p>
+
+          <p class="bold">Customer Quotes</p>
+          <p class="pullquote">“This is awesome, definitely. I see this allowing us to draw a line in the sand and start with a base set of data that we can progress monthly…this would be great.” - global telecommunications company</p>
+          <p class="pullquote">“My eyes are sparkling, I am very excited about how I can play around with this.” - international bank</p>
+          <p class="pullquote">“This is all we need” - not for profit org</p>
+          <p class="pullquote">“I’m most excited about the fact that I don’t know how I will use this but I know it contains the information in the format that I want it. I am really looking forward to not having to sort manually.” - technology startup</p>
+          <p class="pullquote">“I as an admin would like to see this view, this will make our lives a whole lot easier”  - construction logistics company</p>
+
           <p class="bold large" id="post-launch">Post-launch</p>
 
-          <img src="img/library-report/amplitude-2.png" class="imgs" alt="">
-          <p>words</p>
+          <img src="img/library-report/amplitude-2.png" class="imgs" alt="Amplitude report of the new library report views, one year later.">
+          <p>Now, almost a year later, the report is seeing a steady 2x the amount of views that the legacy report did at roughly 2200 pageviews per month</p>
 
           <p class="bold large" id="future">Future of this project</p>
 
-          <img src="img/library-report/ai-version.png" class="imgs" alt="">
-          <p>words</p>
+          <p>We have seen great success in the first release of the Library Report, but there is still lots of opportunity to extend the project. While the current charts and data can give users clear actions to improve their metrics, all of these actions exist in other areas of the Loopio platform. Because of this, there could be opportunity in bringing these charts into those other areas rather than keeping them in their own reporting area. </p>
+
+          <p>This current design does a good job of showing a snapshot of the latest data, but does not yet compare data over time. We are exploring the ability to compare past and current data, combined with artificial intelligence to predict future trends. Utilizing AI, we can give users a glimpse into where their data may be going, and what actions they can take to change the direction to a more favourable outcome for their business. </p>
+
+          <img src="img/library-report/ai-version.png" class="imgs" alt="A future potential version of the library report that relies on ChatGPT for alternative navigation.">
+          <p>Here is an example of how ChatGPT could allow users to bypass filtering and create a human-friendly conversation to find exactly the answers and predictions they need.
+
+</p>
 
         </div>
 
@@ -112,8 +154,8 @@
           <
         </td>
         <td></td>
-        <td align="left" width="50%"><a href="../daypack">
-          <div class="next"><span class="prevnext">previous</span><br>DayPack</div>
+        <td align="left" width="50%"><a href="../powerbi">
+          <div class="next"><span class="prevnext">previous</span><br>Power BI</div>
           </a>
         </td></a>
         <td align="right" width="50%"><a href="../kardia">
