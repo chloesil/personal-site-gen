@@ -175,8 +175,8 @@ nav a:hover {
   color: white;
 }
 
-.brains {
-  background-image: url('../img/brainStation/background.png');
+.teaching {
+  background-image: url('../img/teaching/background.png');
   background-size: cover;
   color: white;
 }
