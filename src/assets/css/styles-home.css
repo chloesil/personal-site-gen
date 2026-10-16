@@ -74,82 +74,33 @@ section {
 .topspace {
   height: 27px;
 }
+
 .gradient-bg {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: var(--gb-height);
   overflow: hidden;
-  background: var(--gb-base);
-  isolation: isolate;
-  color: var(--ink-on-gradient);
+  background: #6e8bb3;   /* base color, shows through at the gaps */
 }
 
-.orb {
-  --s: var(--gb-orb-size);      /* per-orb size, overridable */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: calc(var(--s) * 1vmax);
-  height: calc(var(--s) * 1vmax);
-  margin-left: calc(var(--s) * -0.5vmax);
-  margin-top: calc(var(--s) * -0.5vmax);
-  border-radius: 50%;
-  background: radial-gradient(circle at center, var(--c) 0%, transparent 65%);
-  filter: blur(var(--gb-blur));
-  mix-blend-mode: var(--gb-blend);
-  opacity: var(--gb-intensity);
-  will-change: transform;
-}
-
-.orb-1 { --c: var(--gb-c1); animation: drift-1 var(--gb-t1) ease-in-out infinite; }
-.orb-2 { --c: var(--gb-c2); animation: drift-2 var(--gb-t2) ease-in-out infinite; }
-.orb-3 { --c: var(--gb-c3); animation: drift-3 var(--gb-t3) ease-in-out infinite; }
-.orb-4 { --c: var(--gb-c4); animation: drift-4 var(--gb-t4) ease-in-out infinite; }
-.orb-5 { --c: var(--gb-c5); --s: var(--gb-warm-orb-size); animation: drift-5 var(--gb-t5) ease-in-out infinite; }
-.orb-6 { --c: var(--gb-c6); --s: var(--gb-warm-orb-size); animation: drift-6 var(--gb-t6) ease-in-out infinite; }
-
-@keyframes drift-1 {
-  0%, 100% { transform: translate(-24%, -20%) scale(1.00); }
-  33%      { transform: translate( 18%,  12%) scale(1.28); }
-  66%      { transform: translate(  4%, -26%) scale(0.88); }
-}
-@keyframes drift-2 {
-  0%, 100% { transform: translate( 22%,  16%) scale(1.10); }
-  40%      { transform: translate(-20%,  -8%) scale(0.86); }
-  70%      { transform: translate( -6%,  24%) scale(1.24); }
-}
-@keyframes drift-3 {
-  0%, 100% { transform: translate(  6%,  26%) scale(0.92); }
-  45%      { transform: translate( 26%, -18%) scale(1.22); }
-  75%      { transform: translate(-22%,   6%) scale(1.04); }
-}
-@keyframes drift-4 {
-  0%, 100% { transform: translate(-18%,  22%) scale(1.18); }
-  38%      { transform: translate( 10%, -24%) scale(0.90); }
-  72%      { transform: translate( 24%,   8%) scale(1.12); }
-}
-@keyframes drift-5 {
-  0%, 100% { transform: translate( 14%, -22%) scale(1.06); }
-  35%      { transform: translate(-24%,  14%) scale(1.26); }
-  68%      { transform: translate( 20%,  22%) scale(0.90); }
-}
-@keyframes drift-6 {
-  0%, 100% { transform: translate( -8%,  24%) scale(1.20); }
-  42%      { transform: translate( 22%, -12%) scale(0.88); }
-  77%      { transform: translate(-26%, -16%) scale(1.10); }
-}
-
-.gradient-bg::after {
+.gradient-bg::before {
   content: "";
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: var(--gb-grain);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  inset: -60px;          /* overshoot so the blur falls off cleanly at the edges */
+  background: radial-gradient(circle at 50% 50%, #ffffff, transparent 55%),
+              radial-gradient(circle at 75% 15%, #2a4a8c, transparent 55%),
+              radial-gradient(circle at 60% 70%, #7fa3d1, transparent 55%),
+              radial-gradient(circle at 20% 80%, #3b8ab0, transparent 55%),
+              radial-gradient(circle at 85% 60%, #7d1a2b, transparent 50%),
+              radial-gradient(circle at 40% 45%, #c4560f, transparent 45%);
+  filter: blur(60px);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .orb { animation-play-state: paused; }
+/* Any content placed inside .gradient-bg needs this to render above the
+   blurred ::before layer instead of underneath it. */
+.gradient-bg > * {
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -317,8 +268,10 @@ nav a:hover {
   color: white;
 }
 
-.library {
-  background-image: url('../img/library-report/background.png');
+.extension {
+    background:
+      linear-gradient(rgba(18, 30, 52, 0.9), rgba(18, 30, 52, 0.9)),
+      url("../img/extension/hero-composite.png");
   background-size: cover;
   color: white;
 }
